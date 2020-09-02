@@ -1,3 +1,15 @@
 nav {
+    width: 100vw;
+    position: fixed;
+    display: inline-block;
+    z-index: 999999;
     font-family: "Google Sans", 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav_primary {
+    display: inline;
+}
+
+.nav_secondary {
+    display: inline;
 }
