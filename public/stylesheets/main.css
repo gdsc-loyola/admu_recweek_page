@@ -15,17 +15,18 @@ body {
 
 /* GADGETS */
 
-.gadgets {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 50px;
-  background-image: url("../assets/grid.png");
-  background-color: white;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
+.gadgets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+    background-image: url("../assets/grid.png");
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* box-sizing: border-box; */
+    overflow: hidden;
 }
 
 .gadgets-header {
@@ -51,36 +52,25 @@ body {
   text-align: center;
 }
 
-.gadgets-body {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.gadgets-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.laptop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  height: 30vw;
-  background: #4285f4;
-}
-
-.laptop h5 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 46px;
-  color: #ffffff;
+.laptop{
+    width: 30%;
+    transform: rotate(50deg) translate(-80px, 60px);
 }
 
 .mobile {
   width: 35%;
 }
 
-.ipad {
-  width: 30%;
-  height: auto;
+.ipad{
+    width: 30%;
+    transform: rotate(-50deg) translate(80px, 60px);
 }
 
 .team-pic {
@@ -89,14 +79,15 @@ body {
 
 /* COMMUNITY */
 
-.community {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  overflow: hidden;
+.community{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+    overflow: hidden;
 }
 
 .community-body {
@@ -204,11 +195,12 @@ body {
 
 /* THEME */
 
-.theme {
-  width: 100%;
-  background-image: url("../assets/leaves.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+.theme{
+    width: 100%;
+    background-image: url("../assets/leaves.png");
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .theme-body {
@@ -242,25 +234,30 @@ body {
 
 /* VISION */
 
-.vision {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  padding-top: 100px;
-  box-sizing: border-box;
+.vision{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
 }
 
-.temporary {
-  width: 30%;
+.vision-temporary{
+    width: 30%;
 }
 
-.vision-body h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 3vw;
-  color: #333333;
-  margin: 0;
+.vision-body{
+    width: 50%;
+}
+
+.vision-body h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #333333;
+    margin: 0;
 }
 
 .vision-body p {
@@ -273,51 +270,50 @@ body {
 
 /* MISSION */
 
-.mission {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-top: 100px;
-  box-sizing: border-box;
+.mission{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: white;
 }
 
-.mission-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100% - 530px);
+.mission-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
 
 .mission-body section {
   width: 60%;
 }
 
-.mission-body h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 71px;
-  color: #333333;
-  margin: 0;
+.mission-body h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #333333;
+    margin: 0;
 }
 
-.mission-body p {
-  width: 80%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  line-height: 23px;
-  color: #333333;
-  margin-bottom: 100px;
+.mission-body p{
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 100px;
 }
 
-.mission-body p:nth-child(1) {
-  margin-bottom: 20px;
+.mission-body p:nth-child(1){
+    margin-bottom: 10px;
 }
 
-.mission-pic {
-  width: 530px;
-  height: 448px;
-  background: #c4c4c4;
+.mission-temporary{
+    width: 30%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -325,21 +321,35 @@ body {
     font-size: 40px;
   }
 
-  .community-body p {
-    font-size: 15px;
-    line-height: 21px;
-  }
+@media screen and (max-width: 1250px){
+
+    /* COMMUNITY */
+
+    .community-body h1{
+        font-size: 40px;
+    }
+    
+    .community-body p{
+        font-size: 15px;
+        line-height: 21px;
+    }
+    
 }
 
-@media screen and (max-width: 900px) {
-  .community-body h1 {
-    font-size: 30px;
-  }
+@media screen and (max-width: 900px){
 
-  .community-body p {
-    font-size: 13px;
-    line-height: 18px;
-  }
+    /* COMMUNITY */
+
+    .community-body h1{
+        font-size: 30px;
+    }
+    
+    .community-body p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    /* VISION */
 
   .vision {
     height: auto;
@@ -353,10 +363,11 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .gadgets-header {
-    margin: 80px 0 60px;
-  }
+    /* GADGETS */
+
+    .gadgets-header{
+        margin: 80px 0 60px;
+    }
 
   .gadgets-header h1 {
     font-size: 29px;
@@ -368,16 +379,7 @@ body {
     line-height: 25px;
   }
 
-  .community-body p:nth-child(4) {
-    margin-top: 40px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .community {
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
+    /* COMMUNITY */
 
   .community-body {
     align-self: flex-start;
@@ -390,20 +392,102 @@ body {
     align-self: flex-end;
   }
 
-  .community-body h1 {
-    font-size: 20px;
-  }
+    .community-body h1{
+        font-size: 20px;
+    }
+    
+    .community-body p{
+        font-size: 13px;
+        line-height: 15px;
+    }
 
-  .community-body p {
-    font-size: 13px;
-    line-height: 15px;
-  }
+    .community-body p:nth-child(4){
+        margin-top: 40px;
+    }
+
+    .earth{
+        position: relative;
+        top: 100px;
+        align-self: flex-end;
+    }
+
+    /* MISSION */
+
+    .mission-body p{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 500px) {
-  .gadgets-header {
-    margin: 60px 0 40px;
-  }
+@media screen and (max-width: 700px){
+
+    /* VISION */
+
+    .vision{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vision-temporary{
+        width: 40%;
+        padding: 50px 0 30px;
+    }
+
+    .vision-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .vision-body h1{
+        font-size: 5vw;
+    }
+
+    .vision-body p{
+        margin-right: 0;
+    }
+
+    /* MISSION */
+
+    .mission{
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mission-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mission-body h1{
+        font-size: 5vw;
+    }
+
+    .mission-body p{
+        margin-right: 0;
+    }
+
+    .mission-temporary{
+        width: 40%;
+        padding: 0 0 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    /* GADGETS */
+
+    .gadgets-header{
+        margin: 60px 0 40px;
+    }
 
   .gadgets-header h1 {
     font-size: 20px;
@@ -417,15 +501,42 @@ body {
     margin: 0 auto;
   }
 
-  .community-body {
-    width: 100%;
-  }
+    /* COMMUNITY */
+
+    .community-body{
+        width: 100%;
+    }
+
+    /* VISION */
+
+    .vision-body h1{
+        font-size: 22px;
+    }
+
+    .vision-body p{
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    /* MISSION */
+
+    .mission-body h1{
+        font-size: 30px;
+    }
 }
 
-@media screen and (max-width: 400px) {
-  .gadgets-header {
-    margin: 40px 0 30px;
-  }
+@media screen and (max-width: 400px){
+
+    /* GADGETS */
+
+    .gadgets-header{
+        margin: 40px 0 30px;
+    }
+
+    .gadgets-header h1{
+        font-size: 17px;
+        line-height: 30px;
+    }
 
   .gadgets-header h1 {
     font-size: 17px;
@@ -443,14 +554,16 @@ body {
     display: none;
   }
 
-  .mobile {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .ipad {
-    display: none;
-  }
+    .ipad{
+        display: none;
+    }
+    
+    /* COMMUNITY */
+    
+    .community-body{
+        align-self: none;
+        padding-top: 20px;
+    }
 
   .community-body {
     align-self: none;
