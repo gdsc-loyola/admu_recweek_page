@@ -1,6 +1,6 @@
 gsap.from(".gadgets-header", {
-  x: "-100%",
-  duration: 1,
+  duration: 1.5,
+  delay: 0.5,
   opacity: 0,
   ease: "power2.outs",
 });
@@ -27,17 +27,14 @@ let community = gsap.timeline({
     end: "bottom top",
     pin: true,
     scrub: 1,
-    markers: true,
   }
 })
 
 community
   .to(".theme", { opacity: 0 })
-  .from(".community-body", { duration: 100, opacity: 0, delay: 100 })
+  .from(".community", { duration: 100, opacity: 0, delay: 100 })
   .from(".earth", { scale: 0, duration: 100 })
-  .to(".community", { yPercent: -5, duration: 100 })
-
-
+  .to(".community", { yPercent: -10, duration: 100 })
 
 let theme = gsap.timeline({
   scrollTrigger: {
@@ -49,28 +46,30 @@ let theme = gsap.timeline({
 })
 
 theme
-  .to(".theme", { opacity: 1 })
-  .to(".theme img", { scale: 0.2 })
+  .to(".theme", { opacity: 0 })
+  .to(".theme", { opacity: 1, duration: 100 })
+  .to(".theme", { opacity: 0 }, "<3")
 
 
 let vision = gsap.timeline({
   scrollTrigger: {
     trigger: ".vision",
-    start: "top top",
-    end: "bottom top",
     pin: true,
     scrub: true,
   }
 })
-// let mission = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".mission",
-//     start: "top top",
-//     end: "bottom top",
-//     pin: true,
-//     scrub: true,
-//   }
-// })
+
+vision
+  .from(".vision", { opacity: 0, duration: 10 })
+  .from(".vision-temporary", { x: "-150%", ease: "power4.outs", duration: 10 })
+  .from(".vision-body", { opacity: 0, delay: 1, duration: 20 })
+  .to('.vision-body', { opacity: 0, duration: 10 })
+  .to(".vision", { x: "60vw", duration: 10, opacity: 1 })
+
+
+
+
+
 
 
 
