@@ -34,7 +34,6 @@ community
   .to(".theme", { opacity: 0 })
   .from(".community", { duration: 100, opacity: 0, delay: 100 })
   .from(".earth", { scale: 0, duration: 100 })
-  .to(".community", { yPercent: -10, duration: 100 })
 
 let theme = gsap.timeline({
   scrollTrigger: {
@@ -47,8 +46,8 @@ let theme = gsap.timeline({
 
 theme
   .to(".theme", { opacity: 0 })
-  .to(".theme", { opacity: 1, duration: 100 })
-  .to(".theme", { opacity: 0 }, "<3")
+  .to(".theme", { opacity: 1, duration: 100 }, "<0")
+  .to(".theme", { opacity: 0 }, "<4")
 
 
 let vision = gsap.timeline({
