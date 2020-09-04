@@ -184,10 +184,6 @@ body{
 /* THEME */
 
 .theme{
-    /* for animation only */
-    margin-bottom: 100vh; 
-    /* for animation only */
-
     position: relative;
     z-index: -1;
     height: 100vh;
@@ -237,8 +233,6 @@ body{
 /* VISION */
 
 .vision{
-  
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -276,7 +270,7 @@ body{
 
 .mission{
     position: relative;
-    z-index: 1;
+    z-index: -100;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
