@@ -2,11 +2,6 @@ body{
     margin: 0;
 }
 
-.display-none {
-    display: none;
-}
-
-
 /*********************************************** SECTION 1 ***************************************************/
 
 .section-1{
@@ -184,6 +179,9 @@ body{
 /* THEME */
 
 .theme{
+    /* animation only */
+    opacity: 0; 
+    /* animation only */
     position: relative;
     z-index: -1;
     height: 100vh;
@@ -269,8 +267,10 @@ body{
 /* MISSION */
 
 .mission{
-    position: relative;
-    z-index: -100;
+    /* animation only */
+    opacity: 0; 
+    /* padding-bottom: 100vh; */
+    /* animation only */
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -313,6 +313,9 @@ body{
 }
 
 .mission-temporary{
+    /* animation only */
+    /* visibility: hidden; */
+    /* animation only */
     width: 30%;
 }
 
