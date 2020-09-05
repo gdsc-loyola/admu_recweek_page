@@ -5,7 +5,7 @@ body{
 
 nav {
     width: 100vw;
-    position: fixed;
+    position: absolute;
     top: 0;
     display: inline-block;
     z-index: 999999;
