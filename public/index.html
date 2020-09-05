@@ -8,6 +8,31 @@
   <link rel="stylesheet" href="stylesheets/normalize.css">
   <link rel="stylesheet" type="text/css" href="./stylesheets/main.css" />
   <title>RecWeek</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAH3t2CuTZ6w79bEgGdH322aUeNd9MqUwg",
+      authDomain: "admu-recweek-page.firebaseapp.com",
+      databaseURL: "https://admu-recweek-page.firebaseio.com",
+      projectId: "admu-recweek-page",
+      storageBucket: "admu-recweek-page.appspot.com",
+      messagingSenderId: "802915253672",
+      appId: "1:802915253672:web:f7c7549d32f65a21e7319d",
+      measurementId: "G-WHMWK4PK6X"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
 </head>
   
 <body>
