@@ -25,6 +25,7 @@ nav {
 .nav-primary {
     display: inline-block;
     margin-left: 24px;
+    padding: 10px 16px;
 }
 
 .nav-secondary {
@@ -52,6 +53,71 @@ nav {
 body{
     margin: 0;
 }
+
+@media screen and (max-width: 850px) {
+
+    .text-container{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .navigation-primary{
+        position: relative;
+        left: auto;
+        right: auto;
+    }
+
+    nav img {
+        width: 124px;
+        height: 20px;
+    }
+
+    img[alt = "PH Icon"]{
+        height: 20px;
+        width: 20px;
+    }
+
+    nav span{
+        font-size: 0.8em;
+    }
+
+    .navigation-secondary{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background-color: white;
+        -webkit-box-shadow: 0 4px 6px -6px #222;
+        -moz-box-shadow: 0 4px 6px -6px #222;
+        box-shadow: 0 4px 6px -6px #222;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .navigation-primary{
+        margin-left: 25px;
+    }
+
+    nav img {
+        width: 100px;
+        height: 18px;
+    }
+
+    img[alt = "PH Icon"]{
+        height: 16px;
+        width: 16px;
+    }
+}
+
+
 
 /*********************************************** SECTION 1 ***************************************************/
 
