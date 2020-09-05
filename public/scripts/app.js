@@ -56,6 +56,7 @@ let vision = gsap.timeline({
     end: 'bottom top',
     pin: true,
     scrub: 1,
+    markers: true,
   }
 })
 
@@ -70,18 +71,28 @@ vision
 let mission = gsap.timeline({
   scrollTrigger: {
     trigger: ".mission",
-    end: 'top top',
+    end: "center center",
     pin: true,
     scrub: 1,
-    markers: true,
+
   }
 })
 
 mission
   .to(".mission", { opacity: 1, ease: "slow" })
-  .from(".mission-1", { y: "100vh", ease: "slow" })
-  .from(".mission-2", { y: "100vh", ease: "slow" })
-  .from(".mission-3", { y: "100vh", ease: "slow" })
+  .from(".mission-temporary", { y: '150%', ease: "slow" })
+  .from(".mission-1", { y: "150vh", ease: "slow" })
+  .to(".mission-1", { opacity: 0.5, ease: "slow", delay: 1 })
+  .from(".mission-2", { y: "150vh", ease: "slow" })
+  .to(".mission-2", { opacity: 0.5, ease: "slow", delay: 1 })
+  .from(".mission-3", { y: "150vh", ease: "slow" })
+  .to(".mission-3", { opacity: 0.5, ease: "slow", delay: 1 })
+  .to(".mission-1", { opacity: 1, ease: "slow" })
+  .to(".mission-2", { opacity: 1, ease: "slow" }, "<0")
+  .to(".mission-3", { opacity: 1, ease: "slow" }, "<0")
+
+
+
 
 
 
