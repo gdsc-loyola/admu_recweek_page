@@ -7,7 +7,8 @@ nav {
     width: 100vw;
     position: absolute;
     top: 0;
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
     z-index: 999999;
     height: 32px;
     background-color: white;
@@ -123,10 +124,6 @@ nav {
 .ipad{
     width: 30%;
     transform: rotate(-50deg) translate(80px, 60px);
-}
-
-.team-pic{
-    width: 100%;
 }
 
 /* COMMUNITY */
@@ -321,7 +318,7 @@ nav {
 .mission{
     /* animation only */
     opacity: 0; 
-    padding-bottom: 100vh;
+    /* padding-bottom: 100vh; */
     /* animation only */
     display: flex;
     justify-content: space-around;
@@ -624,6 +621,736 @@ nav {
 
 
 /*********************************************** SECTION 2 ***************************************************/
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* PRODUCTS */
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.product-body{
+    width: 50%;
+    margin-right: 70px; 
+}
+
+.product-pic{
+    width: 20%;
+}
+
+.product-taglines{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #333333;
+}
+
+.product-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333
+}
+
+.product-description span{
+    font-weight: 800;
+}
+
+.product-notes{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    color: #333333;
+}
+
+/* SECTION-2 GADGETS */
+
+.gadgets-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+    background-image: url("../assets/grid.png");
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+.gadgets-2-header{
+    margin: 100px 0 80px;
+}
+
+.gadgets-2-header h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 81px;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+}
+
+.gadgets-2-header p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 31px;
+    color: #333333;
+    margin: 0;
+    text-align: center;
+}
+
+.gadgets-2-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.laptop-2{
+    width: 30%;
+    transform: rotate(50deg) translate(-80px, 60px);
+}
+
+.mobile-2{
+    width: 35%;
+}
+
+.ipad-2{
+    width: 30%;
+    transform: rotate(-50deg) translate(80px, 60px);
+}
+
+/* RECWEEK-APP */
+
+.recweek-app{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.recweek-app-pic{
+    width: 20%;
+}
+
+.recweek-app-body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.recweek-app-body h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 51px;
+    color: #333333;
+    margin: 0;
+}
+
+.recweek-app-body p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.recweek-app-body p:nth-child(1){
+    margin: 0;
+}
+
+.recweek-app-tech{
+    display: flex;
+}
+
+.firebase-icon, 
+.flutter-icon{
+    width: 30px;
+}
+
+.firebase-icon{
+    margin-right: 20px;
+}
+
+.project-links{
+    display: flex;
+}
+
+.google-btn,
+.apple-btn{
+    width: 190px;
+}
+
+.google-btn{
+    margin-right: 20px;
+}
+
+/* QWIKLABS */
+
+.qwiklabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.qwiklabs-pic{
+    width: 20%;
+}
+
+.qwiklabs-body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.qwiklabs-body h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 51px;
+    color: #333333;
+    margin: 0;
+}
+
+.qwiklabs-body p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.qwiklabs-body p:nth-child(1){
+    margin: 0;
+}
+
+.qwiklabs-tech{
+    display: flex;
+}
+
+.firebase-icon{
+    width: 30px;
+}
+
+.project-links{
+    display: flex;
+}
+
+.visit-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding: 7px 14px;
+    background: #4285F4;
+    border: 4px solid #4285F4;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* BANTAY-BAYAN */
+
+.bantay-bayan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.bantay-bayan-pic{
+    width: 20%;
+}
+
+.bantay-bayan-body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.bantay-bayan-body h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 51px;
+    color: #333333;
+    margin: 0;
+}
+
+.bantay-bayan-body p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.bantay-bayan-body p:nth-child(1){
+    margin: 0;
+}
+
+.bantay-bayan-tech{
+    display: flex;
+}
+
+.firebase-icon{
+    width: 30px;
+}
+
+.bantay-bayan-links{
+    display: flex;
+}
+
+.visit-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding: 7px 14px;
+    background: #4285F4;
+    border: 4px solid #4285F4;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Slider */
+
+.event-slider-pic{
+    width: 100%;
+    height: 100vh;
+    background-color: #ce5f88;
+}
+
+.event-slider{
+    width: 100%;
+    /* height: 100vh;   */
+}
+
+.event{
+    width: 100%;
+    height: 100vh;
+}
+
+.event-pics{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+.event-pic{
+    width: inherit;
+    height: inherit;
+}
+
+.event-pic:nth-child(1){
+    background-color: #ce5f88;
+}
+
+.event-pic:nth-child(2){
+    background-color: #5fce6a;
+}
+
+.event-pic:nth-child(3){
+    background-color: #ce845f;
+}
+
+.event-pic:nth-child(4){
+    background-color: #5f5fce;
+}
+
+.event-body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 250px);
+}
+
+.event-description{
+    width: 50%;
+    margin-left: 10%;
+}
+
+.event-description p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+}
+
+.event-description h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 51px;
+    color: #333333;
+}
+
+/* UPCOMING EVENTS */
+
+.upcoming-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.upcoming-message h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7vw;
+    text-align: center;
+    color: #000000;
+}
+
+.upcoming-event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.upcoming-event h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7vw;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.upcoming-event p{
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+@media screen and (max-width: 1000px){
+
+    /* PRODUCTS */
+
+    .product-description{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    /* PRODUCTS */
+    .product-taglines{
+        font-size: 12px;
+    }
+    
+    .product-description{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .product-notes{
+        font-size: 13px;
+        line-height: 17px;
+    } 
+
+    /* RECWEEK APP */
+
+    .recweek-app{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .recweek-app-body{
+        width: 80%;
+    }
+
+    .recweek-app-links{
+        align-self: flex-end;
+    }
+
+    /* QWIKLABS */
+
+    .qwiklabs{
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+
+    .qwiklabs-body{
+        width: 80%;
+    }
+
+    .qwiklabs-links{
+        align-self: flex-end;
+    }
+
+    /* BANTAY BAYAN */
+
+    .bantay-bayan{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .bantay-bayan-body{
+        width: 80%;
+    }
+
+    .bantay-bayan-links{
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    /* SECTION-2 GADGETS */
+
+    .gadgets-2-header{
+        margin: 80px 0 60px;
+    }
+
+    .gadgets-2-header h1{
+        font-size: 29px;
+        line-height: 65px;
+    }
+
+    .gadgets-2-header p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    /* RECWEEK-APP, QWIKLABS, BANTAY BAYAN */
+
+    .recweek-app-pic,
+    .qwiklabs-pic,
+    .bantay-bayan-pic{
+        width: 25%;
+    }
+
+    .google-btn,
+    .apple-btn{
+        width: 45%
+    }
+
+    /* UPCOMING EVENTS */
+
+    .event-pic:nth-child(1),
+    .event-pic:nth-child(2){
+        width: 50%;
+    }
+
+    .event-pic:nth-child(3),
+    .event-pic:nth-child(4){
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    
+    .section-2{
+        margin-top: 150px;
+    }
+
+    /* PRODUCTS */
+
+    .product{
+        flex-direction: column-reverse;
+    }
+
+    .product-body{
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .product-pic{
+        width: 30%
+    }
+
+    /* UPCOMING EVENTS */
+
+    .event-body{
+        justify-content: center;
+    }
+    
+    .event-description{
+        width: 80%;
+        margin: 0;
+    }
+
+    .upcoming-event p{
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    /* PRODUCTS */
+
+    .product-taglines{
+        font-size: 12px;
+    }
+    
+    .product-description{
+        font-size: 17px;
+        line-height: 20px;
+    }
+    
+    .product-notes{
+        font-size: 12px;
+        line-height: 15px;
+    } 
+
+    .product-pic{
+        width: 50%;
+    }
+
+    /* SECTION-2 GADGETS */
+
+    .gadgets-2-header{
+        margin: 60px 0 40px;
+    }
+
+    .gadgets-2-header h1{
+        font-size: 20px;
+        line-height: 56px;
+    }
+
+    .gadgets-2-header p{
+        font-size: 15px;
+        line-height: 17px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* RECWEEK-APP, QWIKLABS, BANTAY BAYAN */
+
+    .recweek-app-pic,
+    .qwiklabs-pic,
+    .bantay-bayan-pic{
+        width: 40%;
+    }
+
+    .recweek-app-body h1,
+    .qwiklabs-body h1,
+    .bantay-bayan h1{
+        font-size: 26px;
+        line-height: 31px;
+    }
+    
+    .recweek-app-body p,
+    .qwiklabs-body p,
+    .bantay-bayan-body p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    /* UPCOMING EVENTS */
+
+    .event-description p{
+        font-size: 13px;
+        line-height: 17px;
+    }
+    
+    .event-description h1{
+        font-size: 23px;
+        line-height: 31px;
+    }
+    
+    .event-pic:nth-child(1){
+        width: 100%;
+    }
+
+    .event-pic:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    /* PRODUCTS */
+
+    .product-taglines{
+        font-size: 11px;
+    }
+    
+    .product-description{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .product-notes{
+        font-size: 11px;
+        line-height: 13px;
+    } 
+
+    /* SECTION-2 GADGETS */
+
+    .gadgets-2-header{
+        margin: 40px 0 30px;
+    }
+
+    .gadgets-2-header h1{
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .gadgets-2-header p{
+        font-size: 13px;
+        line-height: 15px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .laptop-2{
+        display: none;
+    }
+
+    .mobile-2{
+        width: 70%;
+        margin: 0 auto
+    }
+
+    .ipad-2{
+        display: none;
+    }
+
+    /* RECWEEK-APP, QWIKLABS, BANTAY BAYAN */
+
+    .recweek-app-pic,
+    .qwiklabs-pic,
+    .bantay-bayan-pic{
+        margin: 10px 0;
+    }
+}
+
 
 /*********************************************** SECTION 3 ***************************************************/
 
