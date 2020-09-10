@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'Google Sans';
+    src: url('../assets/fonts/GoogleSans-Regular-v1.27.ttf');
+}
 
 body{
     margin: 0;
@@ -16,7 +20,7 @@ nav {
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
-    font-family: "Google Sans", 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Google Sans", 'Segoe UI', 'Google Sans', 'Helvetica Neue', sans-serif;
 }
 
 .text_container {
@@ -87,7 +91,7 @@ nav {
 }
 
 .gadgets-header h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 44px;
     line-height: 81px;
@@ -97,7 +101,7 @@ nav {
 }
 
 .gadgets-header p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 17px;
     line-height: 31px;
     color: #333333;
@@ -145,7 +149,7 @@ nav {
 }
 
 .community-body h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 56px;
     color: #333333;
@@ -153,7 +157,7 @@ nav {
 }
 
 .community-body p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 17px;
     line-height: 23px;
     color: #333333;
@@ -259,7 +263,7 @@ nav {
 }
 
 .theme-body p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -269,7 +273,7 @@ nav {
 }
 
 .theme-body h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 10vw;
     text-align: center;
@@ -298,7 +302,7 @@ nav {
 }
 
 .vision-body h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 3vw;
     color: #333333;
@@ -307,7 +311,7 @@ nav {
 
 .vision-body p{
     width: 80%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 17px;
     line-height: 23px;
     color: #333333;
@@ -341,7 +345,7 @@ nav {
 }
 
 .mission-body h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 3vw;
     color: #333333;
@@ -350,7 +354,7 @@ nav {
 
 .mission-body p{
     width: 80%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 17px;
     line-height: 22px;
     color: #333333;
@@ -651,7 +655,7 @@ nav {
 }
 
 .product-taglines{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.05em;
@@ -659,7 +663,7 @@ nav {
 }
 
 .product-description{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 30px;
     line-height: 35px;
     color: #333333
@@ -670,7 +674,7 @@ nav {
 }
 
 .product-notes{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 13px;
     line-height: 17px;
     color: #333333;
@@ -697,7 +701,7 @@ nav {
 }
 
 .gadgets-2-header h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 44px;
     line-height: 81px;
@@ -707,7 +711,7 @@ nav {
 }
 
 .gadgets-2-header p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 17px;
     line-height: 31px;
     color: #333333;
@@ -758,7 +762,7 @@ nav {
 }
 
 .recweek-app-body h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 51px;
@@ -767,7 +771,7 @@ nav {
 }
 
 .recweek-app-body p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 15px;
     line-height: 23px;
     color: #333333;
@@ -825,7 +829,7 @@ nav {
 }
 
 .qwiklabs-body h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 51px;
@@ -834,7 +838,7 @@ nav {
 }
 
 .qwiklabs-body p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 15px;
     line-height: 23px;
     color: #333333;
@@ -857,7 +861,7 @@ nav {
 }
 
 .visit-btn{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
     line-height: 50px;
@@ -892,7 +896,7 @@ nav {
 }
 
 .bantay-bayan-body h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 51px;
@@ -901,7 +905,7 @@ nav {
 }
 
 .bantay-bayan-body p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 15px;
     line-height: 23px;
     color: #333333;
@@ -924,7 +928,7 @@ nav {
 }
 
 .visit-btn{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
     line-height: 20px;
@@ -995,7 +999,7 @@ nav {
 }
 
 .event-description p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 15px;
     line-height: 20px;
     color: #333333;
@@ -1003,7 +1007,7 @@ nav {
 }
 
 .event-description h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 51px;
@@ -1021,7 +1025,7 @@ nav {
 }
 
 .upcoming-message h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 7vw;
     text-align: center;
     color: #000000;
@@ -1038,7 +1042,7 @@ nav {
 }
 
 .upcoming-event h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 7vw;
     text-align: center;
     color: #000000;
@@ -1047,7 +1051,7 @@ nav {
 
 .upcoming-event p{
     width: 50%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
