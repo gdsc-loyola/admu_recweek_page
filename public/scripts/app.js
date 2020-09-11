@@ -53,10 +53,8 @@ theme
 let vision = gsap.timeline({
   scrollTrigger: {
     trigger: ".vision",
-    end: 'bottom top',
     pin: true,
     scrub: 1,
-    markers: true,
   }
 })
 
@@ -71,28 +69,90 @@ vision
 let mission = gsap.timeline({
   scrollTrigger: {
     trigger: ".mission",
-    end: "center center",
+    end: "bottom top",
     pin: true,
     scrub: 1,
-
   }
 })
 
 mission
   .to(".mission", { opacity: 1, ease: "slow", duration: 100 })
   .from(".mission-temporary", { x: '-150%', ease: "slow", duration: 100 })
-  .from(".mission-1", { y: "150vh", ease: "slow", duration: 100 })
-  .to(".mission-1", { opacity: 0.3, ease: "slow", delay: 10, duration: 100 })
-  .from(".mission-2", { y: "150vh", ease: "slow", duration: 100 })
-  .to(".mission-2", { opacity: 0.3, ease: "slow", delay: 10, duration: 100 })
-  .from(".mission-3", { y: "150vh", ease: "slow", duration: 100 })
-  .to(".mission-3", { opacity: 0.3, ease: "slow", delay: 10, duration: 100 })
-  .to(".mission-1", { opacity: 1, ease: "slow", duration: 100 })
-  .to(".mission-2", { opacity: 1, ease: "slow", duration: 100 }, "<0")
-  .to(".mission-3", { opacity: 1, ease: "slow", duration: 100 }, "<0")
+  .from(".mission-1", { y: "80vh", ease: "slow", duration: 200, opacity: 0 })
+
+  .to(".mission-1", { opacity: 0.3, ease: "slow", delay: 50, duration: 100 })
+  .from(".mission-2", { y: "80vh", ease: "slow", duration: 200, opacity: 0 })
+  .to(".mission-2", { opacity: 0.3, ease: "slow", delay: 50, duration: 100 })
+  .from(".mission-3", { y: "80vh", ease: "slow", duration: 200, opacity: 0 })
+  .to(".mission-3", { opacity: 0.3, ease: "slow", delay: 50, duration: 100 })
+
+  .to(".mission-1", { opacity: 1, ease: "slow", duration: 200 })
+  .to(".mission-2", { opacity: 1, ease: "slow", duration: 200 }, "<0")
+  .to(".mission-3", { opacity: 1, ease: "slow", duration: 200 }, "<0")
+  .to(".mission", { opacity: 0, ease: "slow", duration: 200 })
 
 
+let product0 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".product-0",
+    pin: true,
+    scrub: 1,
+  }
+})
 
+product0
+  .to('.product-0', { opacity: 1 })
+  .to('.product-0', { opacity: 0 })
+
+let product1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".product-1",
+    pin: true,
+    scrub: 1,
+  }
+})
+
+product1
+  .to('.product-1', { opacity: 1 })
+  .to('.product-1', { opacity: 0 })
+
+let product2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".product-2",
+    pin: true,
+    scrub: 1,
+  }
+})
+
+product2
+  .to('.product-2', { opacity: 1 })
+  .to('.product-2', { opacity: 0 })
+
+
+let product3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".product-3",
+    pin: true,
+    scrub: 1,
+  }
+})
+
+product3
+  .to('.product-3', { opacity: 1 })
+  .to('.product-3', { opacity: 0 })
+
+
+let product4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".product-4",
+    pin: true,
+    scrub: 1,
+  }
+})
+
+product4
+  .to('.product-4', { opacity: 1 })
+  .to('.product-4', { opacity: 0 })
 
 
 
