@@ -101,17 +101,34 @@ let product = gsap.timeline({
 })
 
 product
-  .from('.product', { opacity: 0})
+  .from('.product', { opacity: 0 })
+
   .from('.product-1', { opacity: 0, })
+  .to('.pic-1', { opacity: 1, rotation: 45 }, "<0")
   .to('.product-1', { opacity: 0 })
+  .to('.pic-1', { opacity: 0 }, "<0")
+
+
   .from('.product-2', { opacity: 0 })
+  .to('.pic-2', { opacity: 1, rotation: -45 }, "<0")
   .to('.product-2', { opacity: 0 })
+  .to('.pic-2', { opacity: 0 }, "<0")
+
   .from('.product-3', { opacity: 0 })
+  .to('.pic-3', { opacity: 1, rotation: 45 }, "<0")
   .to('.product-3', { opacity: 0 })
+  .to('.pic-3', { opacity: 0 }, "<0")
+
   .from('.product-4', { opacity: 0 })
+  .to('.pic-4', { opacity: 1, rotation: -45 }, "<0")
   .to('.product-4', { opacity: 0 })
+  .to('.pic-4', { opacity: 0 }, "<0")
+
   .from('.product-5', { opacity: 0 })
+  .to('.pic-5', { opacity: 1, rotation: 45 }, "<0")
   .to('.product-5', { opacity: 0 })
+  .to('.pic-5', { opacity: 0 }, "<0")
+
   .to('.product', { opacity: 0 })
 
 

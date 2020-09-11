@@ -652,13 +652,19 @@ nav {
     margin-right: 70px; 
 }
 
+
 .product-pic{
     width: 20%;
+    opacity: 0;
+}
+
+.pic-absolute {
+    right: 6.5%;
+    position: absolute;
 }
 
 .product-1, .product-2, .product-3, .product-4, .product-5 {
     position: absolute;
-    
 }
 
 .product-taglines{
