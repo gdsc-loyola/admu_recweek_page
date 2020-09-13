@@ -3,6 +3,10 @@
     src: url('../assets/fonts/GoogleSans-Regular-v1.27.ttf');
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
 }
@@ -696,6 +700,9 @@ nav {
 /* SECTION-2 GADGETS */
 
 .gadgets-2{
+    /* Animations only  */
+    opacity: 0;
+    /*  */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -756,6 +763,7 @@ nav {
 /* RECWEEK-APP */
 
 .recweek-app{
+    background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -823,6 +831,7 @@ nav {
 /* QWIKLABS */
 
 .qwiklabs{
+    background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -890,6 +899,7 @@ nav {
 /* BANTAY-BAYAN */
 
 .bantay-bayan{
+    background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
