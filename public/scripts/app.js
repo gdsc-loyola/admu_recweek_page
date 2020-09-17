@@ -40,7 +40,7 @@ let community = gsap.timeline({
 })
 
 community
-  .from(".community", { duration: 1, opacity: 0, delay: 1 })
+  .from(".community", { duration: 1, opacity: 0})
   .from(".earth", { scale: 0, duration: 1 })
 
 let theme = gsap.timeline({
@@ -174,7 +174,7 @@ let recweek = gsap.timeline({
 
 recweek
   .from(".recweek-app", { opacity: 0, duration: 1 })
-  .to(".recweek-app-pic", { x: "-200%" })
+  .to(".recweek-app-pic", { x: "-250%" })
   .to(".recweek-app", { opacity: 0, duration: 0.3 }, "<0")
 
 
@@ -189,8 +189,8 @@ let qwiklabs = gsap.timeline({
 
 qwiklabs
   .from(".qwiklabs", { opacity: 0, duration: 1 })
-  .from(".qwiklabs-pic", { x: "200%" })
-  .to(".qwiklabs-pic", { x: "200%" }, "<1")
+  .from(".qwiklabs-pic", { x: "250%" })
+  .to(".qwiklabs-pic", { x: "250%" }, "<1")
   .to(".qwiklabs", { opacity: 0, duration: 0.3 }, "<0")
 
 let bantayBayan = gsap.timeline({
@@ -204,8 +204,8 @@ let bantayBayan = gsap.timeline({
 
 bantayBayan
   .from(".bantay-bayan", { opacity: 0, duration: 1 })
-  .from(".bantay-bayan-pic", { x: "-200%" })
-  .to(".bantay-bayan-pic", { x: "-200%" }, "<1")
+  .from(".bantay-bayan-pic", { x: "-250%" })
+  .to(".bantay-bayan-pic", { x: "-250%" }, "<1")
   .to(".bantay-bayan", { opacity: 0, duration: 0.3 }, "<0")
 
 
@@ -239,7 +239,7 @@ let upcomingMessage = gsap.timeline({
 })
 
 upcomingMessage
-  .from(".upcoming-message", { opacity: 0, duration: 1 }, "<0.5")
+  .from(".upcoming-message", { opacity: 0, duration: 1 }, "<0.3")
   .to(".upcoming-message", { opacity: 0, duration: 1 })
 
 
@@ -253,7 +253,7 @@ let upcoming1 = gsap.timeline({
 })
 
 upcoming1
-  .from(".upcoming-event-1", { opacity: 0, duration: 1 }, "<0.5")
+  .from(".upcoming-event-1", { opacity: 0, duration: 1 }, "<0.3")
   .to(".upcoming-event-1", { opacity: 0, duration: 1  })
 
 
@@ -267,7 +267,7 @@ let upcoming2 = gsap.timeline({
 })
 
 upcoming2
-  .from(".upcoming-event-2", { opacity: 0, duration: 1  }, "<0.5")
+  .from(".upcoming-event-2", { opacity: 0, duration: 1  }, "<0.3")
   .to(".upcoming-event-2", { opacity: 0, duration: 1  })
 
 
@@ -275,10 +275,13 @@ let upcoming3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".upcoming-event-3",
     toggleActions: "restart pause reverse pause",
-    markers: true,
+    pin: true,
     scrub: 1
   }
 })
+
+upcoming3
+  .from(".upcoming-event-3", { opacity: 0, duration: 1 }, "<0.3")
 
 
 

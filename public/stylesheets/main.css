@@ -519,12 +519,18 @@ nav {
         text-align: center;
     }
 
+
     .mission-body h1{
         font-size: 5vw;
     }
 
     .mission-body p{
         margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .mission-temporary {
+        display: none;
     }
 
     .mission-temporary{
@@ -1217,15 +1223,20 @@ nav {
         flex-direction: column-reverse;
     }
 
+    .pic-absolute {
+        right: 37%;
+        top: 8%;
+    }
+
     .product-body{
         width: 80%;
         margin-right: 0;
     }
 
     .product-pic{
-        width: 30%
+        width: 30%;
     }
-
+  
     /* UPCOMING EVENTS */
 
     .event-body{
@@ -1243,6 +1254,11 @@ nav {
 }
 
 @media screen and (max-width: 500px){
+
+    .pic-absolute {
+        right: 23%;
+        top: 5%;
+    }
 
     /* PRODUCTS */
 
