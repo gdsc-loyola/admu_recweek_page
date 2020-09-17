@@ -966,20 +966,22 @@ nav {
 
 /* Slider */
 
-.event-slider-pic{
-    width: 100%;
-    height: 100vh;
-    background-color: #ce5f88;
-}
-
 .event-slider{
     width: 100%;
     /* height: 100vh;   */
+    position: relative;
 }
 
 .event{
     width: 100%;
     height: 100vh;
+    background: white;
+}
+
+.event-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .event-pics{
@@ -1040,6 +1042,7 @@ nav {
 /* UPCOMING EVENTS */
 
 .upcoming-message{
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1055,6 +1058,7 @@ nav {
 }
 
 .upcoming-event{
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1063,6 +1067,7 @@ nav {
     height: 100vh;
     box-sizing: border-box;
 }
+
 
 .upcoming-event h1{
     font-family: 'Google Sans', sans-serif;
