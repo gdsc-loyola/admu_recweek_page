@@ -239,7 +239,7 @@ let upcomingMessage = gsap.timeline({
 })
 
 upcomingMessage
-  .from(".upcoming-message", { opacity: 0, duration: 1 })
+  .from(".upcoming-message", { opacity: 0, duration: 1 }, "<0.5")
   .to(".upcoming-message", { opacity: 0, duration: 1 })
 
 
@@ -253,8 +253,8 @@ let upcoming1 = gsap.timeline({
 })
 
 upcoming1
-  .from(".upcoming-event-1", { opacity: 0 })
-  .to(".upcoming-event-1", { opacity: 0 })
+  .from(".upcoming-event-1", { opacity: 0, duration: 1 }, "<0.5")
+  .to(".upcoming-event-1", { opacity: 0, duration: 1  })
 
 
 let upcoming2 = gsap.timeline({
@@ -267,8 +267,8 @@ let upcoming2 = gsap.timeline({
 })
 
 upcoming2
-  .from(".upcoming-event-2", { opacity: 0, })
-  .to(".upcoming-event-2", { opacity: 0 })
+  .from(".upcoming-event-2", { opacity: 0, duration: 1  }, "<0.5")
+  .to(".upcoming-event-2", { opacity: 0, duration: 1  })
 
 
 let upcoming3 = gsap.timeline({
