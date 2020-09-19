@@ -122,29 +122,39 @@ if (mq.matches) {
     .from('.product', { opacity: 0, duration: 10 })
 
     .from('.product-1', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<10")
+    .from('.sub-1', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<0")
     .to('.pic-1', { opacity: 1, rotation: 45, ease: "slow", duration: 20 }, "<0")
     .to('.product-1', { opacity: 0, ease: "slow", duration: 10 }, "<20")
+    .to('.sub-1', { opacity: 0, ease: "slow", duration: 10}, "<0")
     .to('.pic-1', { opacity: 0, ease: "slow", duration: 10 }, "<0")
 
 
     .from('.product-2', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<10")
+    .from('.sub-2', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<0")
     .to('.pic-2', { opacity: 1, rotation: -45, ease: "slow", duration: 20 }, "<0")
     .to('.product-2', { opacity: 0, ease: "slow", duration: 10 }, "<20")
+    .to('.sub-2', { opacity: 0, ease: "slow", duration: 10 }, "<0")
     .to('.pic-2', { opacity: 0, ease: "slow", duration: 10 }, "<0")
 
     .from('.product-3', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<10")
+    .from('.sub-3', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<0")
     .to('.pic-3', { opacity: 1, rotation: 45, ease: "slow", duration: 20 }, "<0")
     .to('.product-3', { opacity: 0, ease: "slow", duration: 10 }, "<20")
+    .to('.sub-3', { opacity: 0, ease: "slow", duration: 10 }, "<0")
     .to('.pic-3', { opacity: 0, ease: "slow", duration: 10 }, "<0")
 
     .from('.product-4', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<10")
+    .from('.sub-4', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<0")
     .to('.pic-4', { opacity: 1, rotation: -45, ease: "slow", duration: 20 }, "<0")
     .to('.product-4', { opacity: 0, ease: "slow", duration: 10 }, "<20")
+    .to('.sub-4', { opacity: 0, ease: "slow", duration: 10 }, "<0")
     .to('.pic-4', { opacity: 0, ease: "slow", duration: 10 }, "<0")
 
     .from('.product-5', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<10")
+    .from('.sub-5', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<0")
     .to('.pic-5', { opacity: 1, rotation: 45, ease: "slow", duration: 20 }, "<0")
     .to('.product-5', { opacity: 0, ease: "slow", duration: 10 }, "<20")
+    .to('.sub-5', { opacity: 0, ease: "slow", duration: 10 }, "<0")
     .to('.pic-5', { opacity: 0, ease: "slow", duration: 10 }, "<0")
 
     .to('.product', { opacity: 0, duration: 10 })

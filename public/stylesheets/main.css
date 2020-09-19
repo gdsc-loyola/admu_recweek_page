@@ -165,6 +165,7 @@ nav {
     font-size: 17px;
     line-height: 23px;
     color: #333333;
+    width: 80%;
 }
 
 .community-body p:nth-child(3){
@@ -663,9 +664,12 @@ div.mobile-only {
     position: absolute;
 }
 
-.product-1, .product-2, .product-3, .product-4, .product-5 {
+.product-1, .product-2, .product-3, .product-4, .product-5,
+.sub-1, .sub-2, .sub-3, .sub-4, .sub-5 {
     position: absolute;
 }
+
+
 
 .product-taglines{
     font-family: 'Google Sans', sans-serif;
@@ -1320,6 +1324,10 @@ div.mobile-only {
 
     /* UPCOMING EVENTS */
 
+    .event-2 {
+        position: static;
+    }
+
     .event-description p{
         font-size: 13px;
         line-height: 17px;
@@ -1339,8 +1347,12 @@ div.mobile-only {
     }
 
     /* UPCOMING MESSAGES */
-    .upcoming-message, .upcoming-event{
-        height: 50vh;
+
+     .upcoming-message, .upcoming-event-2 {
+         background: black;
+     }
+     .upcoming-message h1, .upcoming-event-2 h1, .upcoming-event-2 p{
+         color: white;
      }
 }
 
