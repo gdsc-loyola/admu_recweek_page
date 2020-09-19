@@ -58,6 +58,7 @@ nav {
     text-decoration: none;
     color: #333333;
     margin-right: 72px;
+    cursor: pointer;
 }
 
 .nav-secondary a:last-child {
