@@ -26,20 +26,24 @@ nav {
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
     font-family: "Google Sans", 'Segoe UI', 'Google Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
 }
+
 
 .text-container {
     width: 100%;
     margin: 0 auto;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .nav-primary {
-    display: inline-block;
+    display: block;
     margin-left: 24px;
+    margin-right: auto;
     padding: 10px 16px;
+    float: left;
 }
 
 .nav-secondary {
@@ -67,6 +71,7 @@ nav {
     border-radius: 4px;
     padding: 10px 16px;
     margin-right: 2vw;
+    width: 88px;
 }
 
 body{
@@ -85,7 +90,6 @@ body{
 
 .burger-btn {
     display: none;
-    position: absolute;
     top: 25px;
     right: 25px;
     cursor: pointer;
@@ -166,15 +170,24 @@ body{
     }
 }
 
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: 800px) {
      nav {
          width: 100%;
+         
      }
+     .text-container{
+        justify-content: space-between;
+     }
+     
     .burger-btn{
         display: block;
         right: 0;
         left: 0.5em;
         max-width: fit-content;
+    }
+
+    .nav-primary{
+        margin-right: 0;
     }
     .nav-primary img{
         margin: 0 auto;
@@ -198,7 +211,6 @@ body{
     }
     #join-us{
         display: inline-block;
-        width: fit-content;
         border: 2px solid #333333;
         background-color: #FFFFFF;
         border-radius: 4px;
