@@ -1405,19 +1405,7 @@ nav {
 /* PLACE */
 
 .place{
-    /* animation only */
-    /* opacity: 0;  */
-    /* animation only */
-    position: relative;
-    z-index: -1;
-    height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 .place-content {
@@ -1729,7 +1717,7 @@ nav {
     /* COMMITTEES */
 
     .committee-header{
-        padding: 20px 50px 0;
+        padding: 70px 100px 10px;
     }
 
     .committee-body{
@@ -1818,7 +1806,7 @@ nav {
     /* COMMITTEES */
 
     .committee-header{
-        padding: 20px 30px 0;
+        padding: 70px 30px 0;
     }
 
     .committee-body{
@@ -1888,7 +1876,7 @@ nav {
     }
 
     .instruction-header{
-        margin: 0;
+        margin-top: 30px;
     }
 
     .instruction-header h1{
