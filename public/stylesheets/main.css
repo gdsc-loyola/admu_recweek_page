@@ -987,7 +987,7 @@ div.mobile-only {
 }
 
 .event-pic{
-    width: inherit;
+    width: 25%;
     height: inherit;
 }
 
@@ -1593,7 +1593,7 @@ div.mobile-only {
     margin-right: 10px;
     border-radius: 100%;
     object-position: center;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .member-info{
