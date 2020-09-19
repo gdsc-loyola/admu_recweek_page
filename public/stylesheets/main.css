@@ -3,6 +3,10 @@
     src: url('../assets/fonts/GoogleSans-Regular-v1.27.ttf');
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
 }
@@ -310,6 +314,7 @@ body{
     font-size: 17px;
     line-height: 23px;
     color: #333333;
+    width: 80%;
 }
 
 .community-body p:nth-child(3){
@@ -381,9 +386,6 @@ body{
 /* THEME */
 
 .theme{
-    /* animation only */
-    opacity: 0; 
-    /* animation only */
     position: relative;
     z-index: -1;
     height: 100vh;
@@ -469,10 +471,7 @@ body{
 /* MISSION */
 
 .mission{
-    /* animation only */
-    opacity: 0; 
-    /* padding-bottom: 100vh; */
-    /* animation only */
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -515,9 +514,6 @@ body{
 }
 
 .mission-temporary{
-    /* animation only */
-    /* visibility: hidden; */
-    /* animation only */
     width: 30%;
 }
 
@@ -663,12 +659,14 @@ body{
         text-align: center;
     }
 
+
     .mission-body h1{
         font-size: 5vw;
     }
 
     .mission-body p{
         margin-right: 0;
+        margin-bottom: 50px;
     }
 
     .mission-temporary{
@@ -785,7 +783,12 @@ body{
 
 /* PRODUCTS */
 
+div.mobile-only {
+    display: none;
+}
+
 .product{
+    background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -799,9 +802,23 @@ body{
     margin-right: 70px; 
 }
 
+
 .product-pic{
     width: 20%;
+    opacity: 0;
 }
+
+.pic-absolute {
+    right: 6.5%;
+    position: absolute;
+}
+
+.product-1, .product-2, .product-3, .product-4, .product-5,
+.sub-1, .sub-2, .sub-3, .sub-4, .sub-5 {
+    position: absolute;
+}
+
+
 
 .product-taglines{
     font-family: 'Google Sans', sans-serif;
@@ -841,7 +858,6 @@ body{
     background-color: white;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* box-sizing: border-box; */
     overflow: hidden;
 }
 
@@ -892,6 +908,7 @@ body{
 /* RECWEEK-APP */
 
 .recweek-app{
+    background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -959,6 +976,7 @@ body{
 /* QWIKLABS */
 
 .qwiklabs{
+    background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1026,6 +1044,7 @@ body{
 /* BANTAY-BAYAN */
 
 .bantay-bayan{
+    background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1092,20 +1111,22 @@ body{
 
 /* Slider */
 
-.event-slider-pic{
-    width: 100%;
-    height: 100vh;
-    background-color: #ce5f88;
-}
-
 .event-slider{
     width: 100%;
     /* height: 100vh;   */
+    position: relative;
 }
 
 .event{
     width: 100%;
     height: 100vh;
+    background: white;
+}
+
+.event-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .event-pics{
@@ -1115,7 +1136,7 @@ body{
 }
 
 .event-pic{
-    width: inherit;
+    width: 25%;
     height: inherit;
 }
 
@@ -1166,6 +1187,7 @@ body{
 /* UPCOMING EVENTS */
 
 .upcoming-message{
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1181,6 +1203,7 @@ body{
 }
 
 .upcoming-event{
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1189,6 +1212,7 @@ body{
     height: 100vh;
     box-sizing: border-box;
 }
+
 
 .upcoming-event h1{
     font-family: 'Google Sans', sans-serif;
@@ -1332,10 +1356,19 @@ body{
         margin-top: 150px;
     }
 
+    .mission-temporary {
+        display: none;
+    }
+
     /* PRODUCTS */
 
     .product{
         flex-direction: column-reverse;
+    }
+
+    .pic-absolute {
+        right: 37%;
+        top: 8%;
     }
 
     .product-body{
@@ -1344,9 +1377,9 @@ body{
     }
 
     .product-pic{
-        width: 30%
+        width: 30%;
     }
-
+  
     /* UPCOMING EVENTS */
 
     .event-body{
@@ -1365,7 +1398,20 @@ body{
 
 @media screen and (max-width: 500px){
 
+
     /* PRODUCTS */
+
+    div.mobile-only {
+         display: flex;
+     }
+
+     .desktop-only {
+         display: none;
+     }
+
+     .product-pic {
+         opacity: 1;
+     }
 
     .product-taglines{
         font-size: 12px;
@@ -1427,6 +1473,10 @@ body{
 
     /* UPCOMING EVENTS */
 
+    .event-2 {
+        position: static;
+    }
+
     .event-description p{
         font-size: 13px;
         line-height: 17px;
@@ -1444,6 +1494,15 @@ body{
     .event-pic:nth-child(2){
         display: none;
     }
+
+    /* UPCOMING MESSAGES */
+
+     .upcoming-message, .upcoming-event-2 {
+         background: black;
+     }
+     .upcoming-message h1, .upcoming-event-2 h1, .upcoming-event-2 p{
+         color: white;
+     }
 }
 
 @media screen and (max-width: 400px){
@@ -1504,6 +1563,573 @@ body{
     }
 }
 
-
 /*********************************************** SECTION 3 ***************************************************/
+
+/* ADVOCACY */
+
+.advocacy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: url("../assets/shapes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.advocacy-body{
+    width: 55%;
+    margin-left: 10%;
+}
+
+.advocacy-body h1{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    color: #333333;
+    margin: 0;
+}
+
+.advocacy-body p{
+    font-family: 'Google Sans', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.advocacy-body p:nth-child(3){
+    width: 80%;
+}
+
+.advocacy-body p:nth-child(4){
+    margin-top: 30px;
+}
+
+
+/* PLACE */
+
+.place{
+    width: 100%;
+}
+
+.place-content {
+    width: 100%;
+    background-image: url("../assets/typing.png");
+    background-repeat: no-repeat;
+}
+
+.place-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.place-body p{
+    width: 70%;
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 50px 30px
+}
+
+.place-body h1{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* COMMITTEES */
+
+.committees{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.committee{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    background-color: #F8F8F8;
+}
+
+.committee-header{
+    width: 100%;
+    padding: 50px 100px 10px;
+    box-sizing: border-box;
+}
+
+.committee-header h1{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+    margin: 0;
+}
+
+.committee-header p{
+    font-family: 'Google Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+}
+
+.committee-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 100px 50px;
+    box-sizing: border-box;
+}
+
+.responsibilities{
+    width: 40%;
+}
+
+.responsibilities p{
+    font-family: 'Google Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.responsibilities p:nth-child(odd){
+    font-weight: bold;
+    margin: 0;
+}
+
+.responsibilities p:nth-child(even){
+    margin-top: 0;
+}
+
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    width: 58%;
+}
+
+.member{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.member-pic{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.member-info{
+    margin: 0;
+}
+
+.member-info p:nth-child(1){
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+}
+
+.member-info p:nth-child(2){
+    font-family: 'Google Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+}
+
+.committee-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.prev-btn, .next-btn{
+    display: flex;
+    align-items: center;
+    font-family: 'Google Sans', sans-serif;
+    cursor: pointer;
+}
+
+.prev-btn img, .next-btn p{
+    margin-right: 10px;
+}
+
+.prev-btn span, .next-btn span{
+    font-weight: bold;
+}
+
+.join-btn{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background-color: #4285F4;
+    padding: 12px 22px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* INSTRUCTION */
+
+.instruction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+
+.instruction-header{
+    width: 100%;
+    margin: 50px 0 30px;
+}
+
+.instruction-header h1{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 46px;
+    color: #333333;
+}
+
+.instruction-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.task{
+    display: flex;
+    align-items: flex-start;
+}
+
+.task-pic{
+    margin-right: 10px;
+}
+
+.task-info p{
+    font-family: 'Google Sans', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+    margin: 0 0 30px;
+}
+
+.task-info p:nth-child(1){
+    font-weight: bold;
+    margin: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 43%;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.form h3{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+}
+
+.form p{
+    width: 85%;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.form a{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 11px 20px;
+    margin-bottom: 20px;
+    background: #4285F4;
+    border: 4px solid #4285F4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1250px){
+
+    /* ADVOCACY */
+
+    .advocacy-body h1{
+        font-size: 40px;
+    }
+    
+    .advocacy-body p{
+        font-size: 15px;
+        line-height: 21px;
+    }
+    
+}
+
+@media screen and (max-width: 950px){
+
+    /* COMMITTEES */
+
+    .committee-header{
+        padding: 70px 100px 10px;
+    }
+
+    .committee-body{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 50px 20px;
+    }
+
+    .responsibilities, .members{
+        width: 100%;
+    }
+
+    .committee-footer{
+        padding: 0 50px;
+    }
+
+    .prev-btn img, .next-btn img{
+        width: 30px;
+    }
+
+    .prev-btn p, .next-btn p{
+        font-size: 15px;
+    }
+
+    .join-btn{
+        font-size: 15px;
+    }
+
+    /* INSTRUCTION */
+
+    .instruction-body{
+        flex-direction: column;
+    }
+
+    .tasks, .form{
+        margin-bottom: 50px;
+    }
+
+    .tasks, .form{ 
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    /* ADVOCACY */
+
+    .advocacy-body h1{
+        font-size: 30px;
+    }
+    
+    .advocacy-body p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    /* PLACE */
+
+    .place-body h1{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    /* ADVOCACY */
+
+    .advocacy{
+        justify-content: center;
+        background-position: right center;
+    }
+
+    .advocacy-body h1{
+        font-size: 30px;
+    }
+    
+    .advocacy-body p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .advocacy-body p:nth-child(4){
+        margin-top: 40px;
+    }
+
+    /* COMMITTEES */
+
+    .committee-header{
+        padding: 70px 30px 0;
+    }
+
+    .committee-body{
+        padding: 0 30px 20px;
+    }
+
+    .member{
+        width: fit-content;
+    }
+
+    .member-info{
+        display: none;
+    }
+
+    .committee-footer{
+        padding: 10px 30px;
+    }
+
+    .prev-btn img, .next-btn img{
+        width: 30px;
+    }
+
+    .prev-btn p, .next-btn p{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    /* INSTRUCTION */
+
+    .instruction{
+        padding: 0 50px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    /* ADVOCACY */
+
+    .advocacy-body{
+        width: 100%;
+    }
+
+    .responsibilities p, .member-info p, .prev-btn p, .next-btn p, .join-btn{
+        font-size: 12px;
+    }
+
+    .member-pic{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* PLACE */
+
+    .place-body p{
+        font-size: 12px;
+        margin: 30px 10px
+    }
+
+    
+    /* INSTRUCTION */
+
+    .instruction{
+        padding: 0 30px;
+    }
+
+    .instruction-header{
+        margin-top: 30px;
+    }
+
+    .instruction-header h1{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .task-pic{
+        width: 50px;
+    }
+
+    .task-info p{
+        font-size: 15px;
+        line-height: 17px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    /* ADVOCACY */
+    
+    .advocacy-body{
+        align-self: none;
+        padding-top: 20px;
+    }
+
+    .advocacy-body p{
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    /* COMMITTEES */
+
+    .committee-header h1{
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .committee-header p{
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+}
 
