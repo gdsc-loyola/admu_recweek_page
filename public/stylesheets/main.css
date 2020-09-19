@@ -13,8 +13,7 @@ nav {
     width: 100vw;
     position: absolute;
     top: 0;
-    /* display: inline-block; */
-    display: none;
+    display: inline-block; 
     z-index: 999999;
     height: 32px;
     background-color: white;
@@ -26,7 +25,7 @@ nav {
 }
 
 .text-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -40,12 +39,14 @@ nav {
 }
 
 .nav-secondary {
-    display: flex;
+    display: inline-block;
+    margin-right: 48px;
     align-items: center;
     font-size: 14px;
 }
 
 .nav-secondary a {
+    align-self: stretch;
     text-decoration: none;
     color: #333333;
     margin-right: 72px;
@@ -55,28 +56,157 @@ nav {
     margin-right: 0;
 }
 
-.nav-secondary button {
+#join-us {
+    display: inline-block;
     border: 2px solid #333333;
     background-color: #FFFFFF;
     border-radius: 4px;
     padding: 10px 16px;
+    margin-right: 2vw;
 }
 
 body{
     margin: 0;
 }
-/* @media screen and (max-width: 1080px) {
+
+.nav-secondary a:nth-child(-n+5):hover {
+    align-items: center;
+    border-bottom: 4px solid #C4C4C4;
+}
+
+#join-us:hover{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.burger-btn {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    margin: 0 16px;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+.burger-btn div {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    background-color: #333;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.burger-btn div:nth-child(1) {
+    top: 0px;
+    /*won't inherit from .burger_button div*/
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    background-color: #333;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+  
+.burger-btn div:nth-child(2),.burger_button div:nth-child(3) {
+    top: 1px;
+    /*won't inherit from .burger_button div*/
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    background-color: #333;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+  
+.burger-btn.open div:nth-child(1) {
+    top: 3px;
+    width: 0%;
+    left: 50%;
+}
+  
+.burger-btn.open div:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+.burger-btn.open div:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
+}
+ @media screen and (max-width: 1024px) {
+    img[alt="DSC Loyola Logo"] {
+        content:url("../assets/dsc-logo-tablet.png");
+    }
+}
+
+ @media screen and (max-width: 767px) {
+     nav {
+         width: 100%;
+     }
+    .burger-btn{
+        display: block;
+        right: 0;
+        left: 0.5em;
+        max-width: fit-content;
+    }
+    .nav-primary img{
+        margin: 0 auto;
+    }
     
-}
-@media screen and (max-width: 850px) {
+    .nav-secondary{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        padding-left: 16px;
+        width: 100%;
+        height: 200px;
+        background-color: white;
+        -webkit-box-shadow: 0 4px 6px -6px #222;
+        -moz-box-shadow: 0 4px 6px -6px #222;
+        box-shadow: 0 4px 6px -6px #222;
+    }
+    #join-us{
+        display: inline-block;
+        width: fit-content;
+        border: 2px solid #333333;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        padding: 10px 16px;
+        margin-right: 2vw;
+    }
 
-}
-
-@media screen and (max-width: 320px) {
-
-} */
-
-
+    #join-us:hover{
+        background-color: #333333;
+    }
+    
+} 
 
 /*********************************************** SECTION 1 ***************************************************/
 

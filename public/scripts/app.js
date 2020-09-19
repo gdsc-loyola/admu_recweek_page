@@ -1,3 +1,25 @@
+const navSecondary = document.querySelector(".nav-secondary");
+const joinUs = document.querySelector(".nav-secondary button")
+const burgerBtn = document.querySelector(".burger-btn");
+window.addEventListener("resize", () => {
+    if(window.innerWidth > 767){
+        navSecondary.style.display = "flex";
+    } else {
+        navSecondary.style.display = "none";
+        joinUs.style.display = "block";
+    }
+})
+
+function showMenu(){
+    if(navSecondary.style.display !== "flex"){
+        navSecondary.style.display = "flex";
+        burgerBtn.classList.add("open");
+    } else {
+        navSecondary.style.display = "none";
+        burgerBtn.classList.remove("open");
+    }
+}
+
 gsap.registerPlugin(ScrollTrigger)
 
 gsap.from(".gadgets-header", {
