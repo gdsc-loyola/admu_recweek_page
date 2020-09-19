@@ -300,6 +300,86 @@ if (mq.matches) {
 
 }
 
+// SLIDER ----------------------------------------------
+
+let HR = document.querySelector('#HR');
+let COM = document.querySelector('#COM');
+let TECH = document.querySelector('#TECH');
+let OPS = document.querySelector('#OPS');
+let FIN = document.querySelector('#FIN');
+
+// HR.style.display = 'none';
+COM.style.display = 'none';
+TECH.style.display = 'none';
+OPS.style.display = 'none';
+FIN.style.display = 'none';
+
+
+let HR_FIN = document.querySelector('#HR-FIN');
+let HR_COM = document.querySelector('#HR-COM');
+
+let COM_HR = document.querySelector('#COM-HR'); 
+let COM_TECH = document.querySelector('#COM-TECH');
+
+let TECH_COM = document.querySelector('#TECH-COM');
+let TECH_OPS = document.querySelector('#TECH-OPS');
+
+let OPS_TECH = document.querySelector('#OPS-TECH');
+let OPS_FIN = document.querySelector('#OPS-FIN');
+
+let FIN_OPS = document.querySelector('#FIN-OPS');
+let FIN_HR = document.querySelector('#FIN-HR');
+
+HR_FIN.addEventListener('click', () => {
+  HR.style.display = 'none';
+  FIN.style.display = 'flex';
+});
+
+HR_COM.addEventListener('click', () => {
+  HR.style.display = 'none';
+  COM.style.display = 'flex';
+});
+
+COM_HR.addEventListener('click', () => {
+  COM.style.display = 'none';
+  HR.style.display = 'flex';
+});
+
+COM_TECH.addEventListener('click', () => {
+  COM.style.display = 'none';
+  TECH.style.display = 'flex';
+});
+
+TECH_COM.addEventListener('click', () => {
+  TECH.style.display = 'none';
+  COM.style.display = 'flex';
+});
+
+TECH_OPS.addEventListener('click', () => {
+  TECH.style.display = 'none';
+  OPS.style.display = 'flex';
+});
+
+OPS_TECH.addEventListener('click', () => {
+  OPS.style.display = 'none';
+  TECH.style.display = 'flex';
+});
+
+OPS_FIN.addEventListener('click', () => {
+  OPS.style.display = 'none';
+  FIN.style.display = 'flex';
+}); 
+
+FIN_OPS.addEventListener('click', () => {
+  FIN.style.display = 'none';
+  OPS.style.display = 'flex';
+});
+
+FIN_HR.addEventListener('click', () => {
+  FIN.style.display = 'none';
+  HR.style.display = 'flex';
+});
+
 
 
 
