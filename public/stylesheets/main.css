@@ -50,11 +50,12 @@ nav {
     display: inline-block;
     margin-right: 48px;
     align-items: center;
+    /* align-self: stretch; */
     font-size: 14px;
+    margin-bottom: 0;
 }
 
 .nav-secondary a {
-    align-self: stretch;
     text-decoration: none;
     color: #333333;
     margin-right: 72px;
@@ -2104,6 +2105,82 @@ div .team-member {
     text-decoration: none;
 }
 
+/******************************FOOTER******************************/
+
+footer{
+    box-sizing: border-box;
+    background: #F2F2F2;
+    height: 266px;
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    padding: 3% 5%;
+    font-family: "Google Sans";
+}
+
+footer .footer-container {
+    margin-right: auto;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.footer-container img{
+    margin-bottom: 25px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+footer a:hover{
+    color: #4F4F4F
+}
+
+footer a:last-child:hover{
+    color: #327EDF;
+}
+
+footer button:hover{
+    background-color: #327EDF;
+}
+
+footer a:last-child{
+    text-decoration: none;
+    color: #4285F4;
+    margin-right: 15px;
+}
+
+.footer-content-right{
+    display: inline-block;
+    flex-direction: column;
+    right: 0;
+}
+.footer-content-right span{
+    display: inline-block;
+    /* margin-right: auto; */
+    line-height: 1.4;
+    font-size: 12;
+}
+footer .footer-content-right button{
+    display: block;
+    font-family: "Google Sans";
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #4285F4;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+}
+
+.footer-secondary{
+    margin-bottom: 25px;
+}
 @media screen and (max-width: 1250px){
 
     /* ADVOCACY */
@@ -2117,6 +2194,72 @@ div .team-member {
         line-height: 21px;
     }
     
+}
+
+@media screen and (max-width: 1108px){
+    /* FOOTER */
+
+    footer{
+        width: 100vw;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 3% 5%;
+    }
+
+
+    .footer-container{
+        width: 100vw;
+        margin-bottom: 32px;
+    }
+
+    .footer-container span{
+        display: inline-block;
+        width: 85vw;
+        font-size: 11px; 
+        margin: 0;
+        margin-right: 16px;  
+    }
+
+    .footer-primary img{
+        margin-bottom: 16px;
+    }
+
+    .footer-secondary{
+        display: flex;
+        margin: 0 0;
+        font-size: 13px;
+        width: fit-content;
+        flex-direction: column;
+    }
+
+    .footer-secondary a{
+        margin-bottom: 11px;
+        width: fit-content;
+    }
+
+    /* .footer-secondary a:last-child{
+        flex-direction: row;
+    } */
+
+    img[alt="DSC Loyola Logo Footer"]{
+        content:url(../assets/dscl_logo.png);
+        width: 223px;
+    }
+    footer button {
+        text-indent:  -999px;
+        line-height: 0;
+        display: block;
+        float: left;
+        margin-top: -150px;
+    }
+    footer button::after{
+        content: "Main Website";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
 }
 
 @media screen and (max-width: 950px){
@@ -2190,6 +2333,7 @@ div .team-member {
     .tasks, .form{ 
         width: 100%
     }
+
 }
 
 @media screen and (max-width: 900px){
@@ -2379,7 +2523,7 @@ div .team-member {
         font-size: 13px;
         margin-bottom: 3px;
     }
-
+    
     .apply-btn{
         left: 38%;
     }
