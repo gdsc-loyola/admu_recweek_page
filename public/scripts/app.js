@@ -2,22 +2,22 @@ const navSecondary = document.querySelector(".nav-secondary");
 // const joinUs = document.querySelector("#join-us");
 const burgerBtn = document.querySelector(".burger-btn");
 window.addEventListener("resize", () => {
-    if(window.innerWidth > 767){
-        navSecondary.style.display = "flex";
-        // joinUs.classList.add("nav-secondary");
-    } else {
-        navSecondary.style.display = "none";
-    }
+  if (window.innerWidth > 767) {
+    navSecondary.style.display = "flex";
+    // joinUs.classList.add("nav-secondary");
+  } else {
+    navSecondary.style.display = "none";
+  }
 })
 
-function showMenu(){
-    if(navSecondary.style.display !== "flex"){
-        navSecondary.style.display = "flex";
-        burgerBtn.classList.add("open");
-    } else {
-        navSecondary.style.display = "none";
-        burgerBtn.classList.remove("open");
-    }
+function showMenu() {
+  if (navSecondary.style.display !== "flex") {
+    navSecondary.style.display = "flex";
+    burgerBtn.classList.add("open");
+  } else {
+    navSecondary.style.display = "none";
+    burgerBtn.classList.remove("open");
+  }
 }
 
 gsap.registerPlugin(ScrollTrigger)
@@ -148,7 +148,7 @@ if (mq.matches) {
     .from('.sub-1', { opacity: 0, ease: "slow", duration: 10, delay: 1 }, "<0")
     .to('.pic-1', { opacity: 1, rotation: 45, ease: "slow", duration: 20 }, "<0")
     .to('.product-1', { opacity: 0, ease: "slow", duration: 10 }, "<20")
-    .to('.sub-1', { opacity: 0, ease: "slow", duration: 10}, "<0")
+    .to('.sub-1', { opacity: 0, ease: "slow", duration: 10 }, "<0")
     .to('.pic-1', { opacity: 0, ease: "slow", duration: 10 }, "<0")
 
 
@@ -205,6 +205,7 @@ if (mq.matches) {
       trigger: ".recweek-app",
       toggleActions: "restart pause reverse pause",
       pin: true,
+      pinSpacing: true,
       scrub: 1,
     }
   })
@@ -220,6 +221,7 @@ if (mq.matches) {
       trigger: ".qwiklabs",
       toggleActions: "restart pause reverse pause",
       pin: true,
+      pinSpacing: true,
       scrub: 1,
     }
   })
@@ -235,6 +237,7 @@ if (mq.matches) {
       trigger: ".bantay-bayan",
       toggleActions: "restart pause reverse pause",
       pin: true,
+      pinSpacing: true,
       scrub: 1,
     }
   })
@@ -256,13 +259,13 @@ if (mq.matches) {
   })
 
   eventSlider
-    .from(".event-1", { opacity: 0 })
-    .from(".event-pic-1", { opacity: 0, duration: 1 })
-    .from(".event-pic-2", { opacity: 0, duration: 1 })
-    .from(".event-pic-3", { opacity: 0, duration: 1 })
-    .from(".event-pic-4", { opacity: 0, duration: 1 })
-    .from(".event-2", { x: "200%", ease: "slow", duration: 2 })
-    .to(".event-slider", { opacity: 0, duration: 5 }, "<3")
+    .from(".event-1", { opacity: 0, duration: 2 })
+    .from(".event-pic-1", { opacity: 0, duration: 2 })
+    .from(".event-pic-2", { opacity: 0, duration: 2 })
+    .from(".event-pic-3", { opacity: 0, duration: 2 })
+    .from(".event-pic-4", { opacity: 0, duration: 2 })
+    .from(".event-2", { x: "200%", ease: "slow", duration: 10 })
+    .to(".event-slider", { opacity: 0, duration: 5 }, "<10")
 
 
 
@@ -344,7 +347,7 @@ let LEAD_HR = document.querySelector('#LEAD-HR');
 let HR_LEAD = document.querySelector('#HR-LEAD');
 let HR_COM = document.querySelector('#HR-COM');
 
-let COM_HR = document.querySelector('#COM-HR'); 
+let COM_HR = document.querySelector('#COM-HR');
 let COM_TECH = document.querySelector('#COM-TECH');
 
 let TECH_COM = document.querySelector('#TECH-COM');
@@ -404,7 +407,7 @@ OPS_TECH.addEventListener('click', () => {
 OPS_FIN.addEventListener('click', () => {
   OPS.style.display = 'none';
   FIN.style.display = 'flex';
-}); 
+});
 
 FIN_OPS.addEventListener('click', () => {
   FIN.style.display = 'none';

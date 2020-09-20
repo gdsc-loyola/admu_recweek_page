@@ -50,12 +50,11 @@ nav {
     display: inline-block;
     margin-right: 48px;
     align-items: center;
-    /* align-self: stretch; */
     font-size: 14px;
-    margin-bottom: 0;
 }
 
 .nav-secondary a {
+    align-self: stretch;
     text-decoration: none;
     color: #333333;
     margin-right: 72px;
@@ -1061,6 +1060,11 @@ div.mobile-only {
     display: flex;
 }
 
+img.google-btn {
+    position: relative;
+    z-index: 100;
+}
+
 .visit-btn{
     font-family: 'Google Sans', sans-serif;
     font-weight: bold;
@@ -1073,7 +1077,11 @@ div.mobile-only {
     border: 4px solid #4285F4;
     border-radius: 4px;
     text-decoration: none;
+    position: relative;
+    z-index: 10000000;
 }
+
+
 
 /* BANTAY-BAYAN */
 
@@ -1296,26 +1304,25 @@ div.mobile-only {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-div .team-member {
+div.member {
     justify-self: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.team-member h2 {
+.member h2 {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 0;
 }
 
-.team-member p {
+.member p {
     margin-top: 10px;
     font-size: 16px;
 }
 
-.team-member img {
+.member img {
     height: 128px;
     width: 128px;
 }
@@ -1614,27 +1621,6 @@ div .team-member {
      .upcoming-message h1, .upcoming-event-2 h1, .upcoming-event-2 p{
          color: white;
      }
-
-     /* TEAM */
-     .member-grid {
-        margin: auto;
-        margin-top: 5rem;
-        width: 50%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .meet-header h1{
-        font-size: 20px;
-    }
-
-    .meet-header p{
-        font-size: 13px;
-    }
-
-    .team-member{
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (max-width: 400px){
@@ -2105,83 +2091,6 @@ div .team-member {
     text-decoration: none;
 }
 
-/******************************FOOTER******************************/
-
-footer{
-    box-sizing: border-box;
-    background: #F2F2F2;
-    height: 266px;
-    display: flex;
-    /* flex-direction: column; */
-    position: relative;
-    padding: 3% 5%;
-    font-family: "Google Sans";
-}
-
-footer .footer-container {
-    margin-right: auto;
-    display: inline-block;
-    flex-direction: column;
-    justify-content: space-between;
-    font-weight: 700;
-}
-
-.footer-container img{
-    margin-bottom: 25px;
-}
-
-footer a{
-    text-decoration: none;
-    color: #000000;
-    margin-right: 15px;
-    font-weight: 700;
-}
-
-footer a:hover{
-    color: #4F4F4F
-}
-
-footer a:last-child:hover{
-    color: #327EDF;
-}
-
-footer button:hover{
-    background-color: #327EDF;
-    cursor: pointer;
-}
-
-footer a:last-child{
-    text-decoration: none;
-    color: #4285F4;
-    margin-right: 15px;
-}
-
-.footer-content-right{
-    display: inline-block;
-    flex-direction: column;
-    right: 0;
-}
-.footer-content-right span{
-    display: inline-block;
-    /* margin-right: auto; */
-    line-height: 1.4;
-    font-size: 12;
-}
-footer .footer-content-right button{
-    display: block;
-    font-family: "Google Sans";
-    font-weight: 700;
-    color: #FFFFFF;
-    background-color: #4285F4;
-    padding: 16px 32px;
-    border: none;
-    border-radius: 4px;
-    float: right;
-}
-
-.footer-secondary{
-    margin-bottom: 25px;
-}
 @media screen and (max-width: 1250px){
 
     /* ADVOCACY */
@@ -2195,73 +2104,6 @@ footer .footer-content-right button{
         line-height: 21px;
     }
     
-}
-
-@media screen and (max-width: 1108px){
-    /* FOOTER */
-
-    footer{
-        width: 100vw;
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 3% 5%;
-    }
-
-
-    .footer-container{
-        width: 100vw;
-        margin-bottom: 32px;
-    }
-
-    .footer-container span{
-        display: inline-block;
-        width: 85vw;
-        font-size: 11px; 
-        margin: 0;
-        margin-right: 16px;  
-    }
-
-    .footer-primary img{
-        margin-bottom: 16px;
-    }
-
-    .footer-secondary{
-        display: flex;
-        margin: 0 0;
-        font-size: 13px;
-        width: fit-content;
-        flex-direction: column;
-    }
-
-    .footer-secondary a{
-        margin-bottom: 11px;
-        width: fit-content;
-    }
-
-    /* .footer-secondary a:last-child{
-        flex-direction: row;
-    } */
-
-    img[alt="DSC Loyola Logo Footer"]{
-        content:url(../assets/dscl_logo.png);
-        width: 223px;
-    }
-    footer button {
-        text-indent:  -999px;
-        line-height: 0;
-        display: block;
-        float: left;
-        margin-top: -150px;
-        color: #F2F2F2;
-    }
-    footer button::after{
-        content: "Main Website";
-        text-indent: 0;
-        display: block;
-        line-height: initial;
-    }
 }
 
 @media screen and (max-width: 950px){
@@ -2335,7 +2177,6 @@ footer .footer-content-right button{
     .tasks, .form{ 
         width: 100%
     }
-
 }
 
 @media screen and (max-width: 900px){
