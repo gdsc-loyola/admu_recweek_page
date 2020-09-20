@@ -1491,7 +1491,7 @@ div.mobile-only {
     .recweek-app-pic,
     .qwiklabs-pic,
     .bantay-bayan-pic{
-        width: 40%;
+        width: 35%;
     }
 
     .recweek-app-body h1,
@@ -1707,9 +1707,9 @@ div.mobile-only {
 
 .committee{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 600px;
+    flex-direction: column;
+    /* justify-content: space-between; */
     background-color: #F8F8F8;
 }
 
@@ -1770,6 +1770,7 @@ div.mobile-only {
     width: 100%;
     padding: 50px 100px 10px;
     box-sizing: border-box;
+    margin-bottom: 48px;
 }
 
 .committee-header h1{
@@ -1807,6 +1808,7 @@ div.mobile-only {
     font-size: 15px;
     line-height: 20px;
     color: #333333;
+    margin-bottom: 24px;
 }
 
 .responsibilities p:nth-child(odd){
@@ -1829,6 +1831,7 @@ div.mobile-only {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    margin-bottom: 16px;
 }
 
 .member-pic{
@@ -2176,6 +2179,11 @@ div.mobile-only {
     .instruction{
         padding: 0 50px;
     }
+    .form{
+        margin: -50px;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -2228,6 +2236,12 @@ div.mobile-only {
     .instruction-header h1{
         font-size: 25px;
         line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .form{
+        margin:-30px;
+        width: 100vw;
         margin-bottom: 30px;
     }
 
