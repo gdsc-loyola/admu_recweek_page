@@ -1660,6 +1660,7 @@ div.mobile-only {
 .place-content {
     width: 100%;
     background-image: url("../assets/typing.png");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -1732,7 +1733,7 @@ div.mobile-only {
     font-size: 15px;
     line-height: 20px;
     color: #333333;
-    margin: 0;
+    margin: 0 0 20px;
 }
 
 .committee-body{
@@ -1971,7 +1972,7 @@ div.mobile-only {
     /* COMMITTEES */
 
     .committee-header{
-        padding: 70px 100px 10px;
+        padding: 70px 50px 10px;
     }
 
     .committee-body{
@@ -2060,7 +2061,7 @@ div.mobile-only {
     /* COMMITTEES */
 
     .committee-header{
-        padding: 70px 30px 0;
+        padding: 50px 30px 0;
     }
 
     .committee-body{
