@@ -2066,6 +2066,7 @@ div.mobile-only {
     .form{
         margin: -50px;
         width: 100vw;
+        margin-bottom: 50px;
     }
 }
 
