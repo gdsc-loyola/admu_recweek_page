@@ -52,21 +52,30 @@
 <body>
 
   <nav>
-    <div class="text_container">
-      <div class="nav_primary">
-        <img src="assets/dscl_logo.png" alt="dsc">
+    <div class="text-container">
+
+      <div class="burger-btn" onclick="showMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+      <div class="nav-primary">
+        <img src="assets/dscl_logo.png" alt="DSC Loyola Logo">
       </div>
 
-      <div class="nav_secondary">
-        <a href="#">About</a>
-        <a href="#">Technologies</a>
-        <a href="#">Projects</a>
-        <a href="#">Departments</a>
-        <a href="#">
-          <button>Join Us</button>
-        </a>
+      <div class="nav-secondary">
+        <a href="#community">About</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#depts">Departments</a>
+        <a href="#team">Team</a>
       </div>
-    </div>
+      
+      <a href="#apply">
+        <button id="join-us">Join Us</button>
+      </a>
+      
   </nav>
 
   <div class="section-1">
@@ -86,7 +95,7 @@
     </div>
 
     <div class="community">
-      <div class="community-body">
+      <div class="community-body" id="community">
         <p>A GLOBAL COMMUNITY</p>
         <h1>
           Communities empowered <br />
@@ -170,7 +179,7 @@
   </div>
 
   <div class="section-2">
-    <div class="product">
+    <div class="product" id="technologies">
       <div class="product-body">
         <p class="product-taglines">CREATING IMPACT TOGETHER</p>
         <p class="product-description">
@@ -297,7 +306,7 @@
 
 
     <div class="gadgets-2">
-      <div class="gadgets-2-header disap">
+      <div class="gadgets-2-header disap" id="projects">
         <h1>In everyone lies an innovator.</h1>
         <p>
           Here at Developer Student Clubs Loyola, we believe anyone can be a
@@ -478,7 +487,7 @@
       </div>
     </div>
 
-    <div class="place">
+    <div class="place" id="depts">
       <div class="place-content">
         <div class="place-body">
           <p>THIS CHANGE BEGINS WITH YOU</p>
@@ -837,7 +846,7 @@
 
     
 
-  <div class="instruction">
+  <div class="instruction" id="apply">
     <div class="instruction-header">
       <h1>Ready to be a change-maker?</h1>
     </div>

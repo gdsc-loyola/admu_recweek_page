@@ -1,3 +1,26 @@
+const navSecondary = document.querySelector(".nav-secondary");
+// const joinUs = document.querySelector("#join-us");
+const burgerBtn = document.querySelector(".burger-btn");
+window.addEventListener("resize", () => {
+    if(window.innerWidth > 767){
+        navSecondary.style.display = "flex";
+        // joinUs.classList.add("nav-secondary");
+    } else {
+        navSecondary.style.display = "none";
+    }
+})
+
+function showMenu(){
+    if(navSecondary.style.display !== "flex"){
+        navSecondary.style.display = "flex";
+        burgerBtn.classList.add("open");
+    } else {
+        navSecondary.style.display = "none";
+        burgerBtn.classList.remove("open");
+    }
+}
+
+gsap.registerPlugin(ScrollTrigger)
 // Only run if screen is more than 500px
 var mq = window.matchMedia("(min-width: 500px)");
 
