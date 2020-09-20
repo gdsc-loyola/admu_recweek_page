@@ -1707,9 +1707,9 @@ div.mobile-only {
 
 .committee{
     display: flex;
-    height: 600px;
+    min-height: 650px;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     background-color: #F8F8F8;
 }
 
@@ -1717,7 +1717,7 @@ div.mobile-only {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 50px 100px 10px;
+    padding: 80px 100px 10px;
     box-sizing: border-box;
 }
 
@@ -1770,7 +1770,6 @@ div.mobile-only {
     width: 100%;
     padding: 50px 100px 10px;
     box-sizing: border-box;
-    margin-bottom: 48px;
 }
 
 .committee-header h1{
@@ -2199,6 +2198,10 @@ div.mobile-only {
         font-size: 19px;
     }
 
+    .apply-btn{
+        left: 42%;
+    }
+
     /* ADVOCACY */
 
     .advocacy-body{
@@ -2281,6 +2284,10 @@ div.mobile-only {
     .committee-header p{
         font-size: 13px;
         margin-bottom: 3px;
+    }
+
+    .apply-btn{
+        left: 38%;
     }
 }
 
