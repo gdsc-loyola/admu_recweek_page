@@ -1960,7 +1960,7 @@ footer{
     background: #FFFFFF;
     height: 266px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: relative;
     padding: 3% 5%;
     font-family: "Google Sans";
@@ -1970,40 +1970,43 @@ footer{
 }
 
 footer .footer-container {
-    width: 90vw;
-    margin: 0 auto;
-    display: flex;
+    margin-right: auto;
+    display: inline-block;
+    flex-direction: column;
     justify-content: space-between;
     font-weight: 700;
-    margin-bottom: 25px;
-    clear: right;
 }
 
-footer .footer-container a{
+.footer-container img{
+    margin-bottom: 25px;
+}
+
+footer a{
     text-decoration: none;
     color: #000000;
     margin-right: 15px;
+    font-weight: 700;
 }
 
-footer .footer-container a:last-child{
+footer a:last-child{
     text-decoration: none;
     color: #4285F4;
     margin-right: 15px;
 }
 
-.footer-content-lower{
-    display: flex;
-    justify-content: space-between;
-}
-.footer-content-lower span{
+.footer-content-right{
     display: inline-block;
-    margin-right: auto;
+    flex-direction: column;
+    right: 0;
+}
+.footer-content-right span{
+    display: inline-block;
+    /* margin-right: auto; */
     line-height: 1.4;
     font-size: 12;
-
 }
-footer .footer-content-lower button{
-    display: inline-block;
+footer .footer-content-right button{
+    display: block;
     font-family: "Google Sans";
     font-weight: 700;
     color: #FFFFFF;
@@ -2011,6 +2014,11 @@ footer .footer-content-lower button{
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
+    float: right;
+}
+
+.footer-secondary{
+    margin-bottom: 25px;
 }
 @media screen and (max-width: 1250px){
 
@@ -2250,5 +2258,64 @@ footer .footer-content-lower button{
         font-size: 13px;
         margin-bottom: 3px;
     }
+
+    /* FOOTER */
+
+    footer{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 3% 5%;
+    }
+
+
+    .footer-container{
+        width: 100vw;
+        margin-bottom: 32px;
+    }
+
+    .footer-container span{
+        display: inline-block;
+        width: 85vw;
+        font-size: 11px; 
+        margin: 0;
+        margin-right: 16px;  
+    }
+
+    .footer-primary img{
+        margin-bottom: 16px;
+    }
+
+    .footer-secondary{
+        display: flex;
+        font-size: 13px;
+        flex-direction: column;
+    }
+
+    .footer-secondary a{
+        margin-bottom: 11px;
+        width: fit-content;
+    }
+
+    /* .footer-secondary a:last-child{
+        flex-direction: row;
+    } */
+
+    img[alt="DSC Loyola Logo Footer"]{
+        content:url(../assets/dscl_logo.png);
+        width: 223px;
+    }
+    footer button {
+        text-indent:  -999px;
+        line-height: 0;
+    }
+    footer button::after{
+        content: "Main Website";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
+    
 }
 
