@@ -2254,6 +2254,7 @@ footer .footer-content-right button{
         display: block;
         float: left;
         margin-top: -150px;
+        color: #F2F2F2;
     }
     footer button::after{
         content: "Main Website";
