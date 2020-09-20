@@ -17,7 +17,7 @@ nav {
     width: 100vw;
     position: absolute;
     top: 0;
-    display: inline-block; 
+    display: block; 
     z-index: 999999;
     height: 32px;
     background-color: white;
@@ -32,6 +32,7 @@ nav {
 
 .text-container {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -43,7 +44,6 @@ nav {
     margin-left: 24px;
     margin-right: auto;
     padding: 10px 16px;
-    float: left;
 }
 
 .nav-secondary {
@@ -188,18 +188,19 @@ body{
         max-width: fit-content;
     }
 
-    .nav-primary{
-        margin-right: 0;
-    }
     .nav-primary img{
         margin: 0 auto;
+    }
+
+    .nav-primary{
+        margin-right: 0;
     }
     
     .nav-secondary{
         display: none;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: space-around;
-        align-items: center;
         position: absolute;
         top: 72px;
         left: 0;
@@ -210,6 +211,10 @@ body{
         -webkit-box-shadow: 0 4px 6px -6px #222;
         -moz-box-shadow: 0 4px 6px -6px #222;
         box-shadow: 0 4px 6px -6px #222;
+    }
+
+    .nav-secondary a{
+        margin-right: 0;
     }
     #join-us{
         display: inline-block;
@@ -1231,7 +1236,7 @@ div.mobile-only {
 
 .upcoming-message h1{
     font-family: 'Google Sans', sans-serif;
-    font-size: 7vw;
+    font-size: 6vw;
     text-align: center;
     color: #000000;
 }
@@ -2114,11 +2119,9 @@ div .team-member {
 footer{
     box-sizing: border-box;
     background: #F2F2F2;
-    height: 266px;
     display: flex;
-    /* flex-direction: column; */
     position: relative;
-    padding: 3% 5%;
+    padding: 2% 4%;
     font-family: "Google Sans";
 }
 
@@ -2253,7 +2256,7 @@ footer .footer-content-right button{
         width: 223px;
     }
     footer button {
-        text-indent:  -999px;
+        text-indent: -9999999px;
         line-height: 0;
         display: block;
         float: left;
