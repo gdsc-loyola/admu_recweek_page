@@ -2063,6 +2063,10 @@ div.mobile-only {
     .instruction{
         padding: 0 50px;
     }
+    .form{
+        margin: -50px;
+        width: 100vw;
+    }
 }
 
 
@@ -2104,6 +2108,12 @@ div.mobile-only {
     .instruction-header h1{
         font-size: 25px;
         line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .form{
+        margin:-30px;
+        width: 100vw;
         margin-bottom: 30px;
     }
 
