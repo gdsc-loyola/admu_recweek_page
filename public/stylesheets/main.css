@@ -1953,6 +1953,65 @@ div.mobile-only {
     text-decoration: none;
 }
 
+/******************************FOOTER******************************/
+
+footer{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 3% 5%;
+    font-family: "Google Sans";
+    -webkit-box-shadow: 0 4px 4px 4px #999;
+    -moz-box-shadow: 0 4px 4px 4px #999;
+    box-shadow: 0 4px 6px 4px #999;
+}
+
+footer .footer-container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 25px;
+    clear: right;
+}
+
+footer .footer-container a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 15px;
+}
+
+footer .footer-container a:last-child{
+    text-decoration: none;
+    color: #4285F4;
+    margin-right: 15px;
+}
+
+.footer-content-lower{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content-lower span{
+    display: inline-block;
+    margin-right: auto;
+    line-height: 1.4;
+    font-size: 12;
+
+}
+footer .footer-content-lower button{
+    display: inline-block;
+    font-family: "Google Sans";
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #4285F4;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+}
 @media screen and (max-width: 1250px){
 
     /* ADVOCACY */
