@@ -325,20 +325,23 @@ if (mq.matches) {
 
 // SLIDER ----------------------------------------------
 
+let LEAD = document.querySelector('#LEAD');
 let HR = document.querySelector('#HR');
 let COM = document.querySelector('#COM');
 let TECH = document.querySelector('#TECH');
 let OPS = document.querySelector('#OPS');
 let FIN = document.querySelector('#FIN');
 
-// HR.style.display = 'none';
+HR.style.display = 'none';
 COM.style.display = 'none';
 TECH.style.display = 'none';
 OPS.style.display = 'none';
 FIN.style.display = 'none';
 
+let LEAD_FIN = document.querySelector('#LEAD-FIN');
+let LEAD_HR = document.querySelector('#LEAD-HR');
 
-let HR_FIN = document.querySelector('#HR-FIN');
+let HR_LEAD = document.querySelector('#HR-LEAD');
 let HR_COM = document.querySelector('#HR-COM');
 
 let COM_HR = document.querySelector('#COM-HR'); 
@@ -351,11 +354,21 @@ let OPS_TECH = document.querySelector('#OPS-TECH');
 let OPS_FIN = document.querySelector('#OPS-FIN');
 
 let FIN_OPS = document.querySelector('#FIN-OPS');
-let FIN_HR = document.querySelector('#FIN-HR');
+let FIN_LEAD = document.querySelector('#FIN-LEAD');
 
-HR_FIN.addEventListener('click', () => {
-  HR.style.display = 'none';
+LEAD_FIN.addEventListener('click', () => {
+  LEAD.style.display = 'none';
   FIN.style.display = 'flex';
+});
+
+LEAD_HR.addEventListener('click', () => {
+  LEAD.style.display = 'none';
+  HR.style.display = 'flex';
+});
+
+HR_LEAD.addEventListener('click', () => {
+  HR.style.display = 'none';
+  LEAD.style.display = 'flex';
 });
 
 HR_COM.addEventListener('click', () => {
@@ -398,9 +411,9 @@ FIN_OPS.addEventListener('click', () => {
   OPS.style.display = 'flex';
 });
 
-FIN_HR.addEventListener('click', () => {
+FIN_LEAD.addEventListener('click', () => {
   FIN.style.display = 'none';
-  HR.style.display = 'flex';
+  LEAD.style.display = 'flex';
 });
 
 

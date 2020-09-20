@@ -1660,6 +1660,7 @@ div.mobile-only {
 .place-content {
     width: 100%;
     background-image: url("../assets/typing.png");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -1706,10 +1707,64 @@ div.mobile-only {
 
 .committee{
     display: flex;
+    height: 600px;
     flex-direction: column;
     /* justify-content: space-between; */
     background-color: #F8F8F8;
 }
+
+.lead-body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 100px 10px;
+    box-sizing: border-box;
+}
+
+.lead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.lead img{
+    width: 70%;
+    margin: 0 0 20px;
+}
+
+.lead p{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 0 0 10px;
+}
+
+.lead p:nth-child(3){
+    font-size: 17px;
+    color: #4285F4;
+}
+
+.lead-msg{
+    width: 50%;
+}
+
+.lead-msg h1{
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+}
+
+.lead-msg p{
+    font-family: 'Google Sans', sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 0;
+}
+
 
 .committee-header{
     width: 100%;
@@ -1732,7 +1787,7 @@ div.mobile-only {
     font-size: 15px;
     line-height: 20px;
     color: #333333;
-    margin: 0;
+    margin: 0 0 20px;
 }
 
 .committee-body{
@@ -1839,7 +1894,10 @@ div.mobile-only {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     cursor: pointer;
+    position: absolute;
+    left: 45%;
 }
 
 .apply-btn p{
@@ -1972,9 +2030,32 @@ div.mobile-only {
 
     /* COMMITTEES */
 
+    .lead-body{
+        flex-direction: column-reverse;
+        padding: 50px 50px 0;
+    }
+
+    .lead-msg{
+        width: 100%;
+    }
+
+    .lead-msg p{
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .lead{
+        align-self: flex-end;
+        align-items: flex-end;
+    }
+
+    .lead p{
+        display: none;
+    }
+
+
     .committee-header{
-        margin-bottom: 48px;
-        padding: 70px 100px 10px;
+        padding: 70px 50px 10px;
     }
 
     .committee-body{
@@ -2063,7 +2144,7 @@ div.mobile-only {
     /* COMMITTEES */
 
     .committee-header{
-        padding: 70px 30px 0;
+        padding: 50px 30px 0;
     }
 
     .committee-body{
@@ -2107,6 +2188,16 @@ div.mobile-only {
 
 
 @media screen and (max-width: 500px){
+
+    /* COMMITTEE */
+
+    .lead-body{
+        padding: 30px 30px 0;
+    }
+
+    .lead-msg h1{
+        font-size: 19px;
+    }
 
     /* ADVOCACY */
 
