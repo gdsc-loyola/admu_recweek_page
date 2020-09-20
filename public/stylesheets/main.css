@@ -1542,6 +1542,10 @@ div .team-member {
         width: 100%;
     }
 
+    .sub-1, .sub-2, .sub-3, .sub-4, .sub-5 {
+        position: static;
+    }
+
     /* SECTION-2 GADGETS */
 
     .gadgets-2-header{
