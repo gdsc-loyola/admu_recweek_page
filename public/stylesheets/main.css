@@ -1298,6 +1298,7 @@ div.mobile-only {
 }
 div .team-member {
     justify-self: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1632,7 +1633,6 @@ div .team-member {
     }
 
     .team-member{
-        align-items: center;
         margin-bottom: 20px;
     }
 }
