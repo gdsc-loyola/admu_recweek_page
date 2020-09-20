@@ -1295,25 +1295,25 @@ div.mobile-only {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-div.member {
+div .team-member {
     justify-self: center;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.member h2 {
+.team-member h2 {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 0;
 }
 
-.member p {
+.team-member p {
     margin-top: 10px;
     font-size: 16px;
 }
 
-.member img {
+.team-member img {
     height: 128px;
     width: 128px;
 }
@@ -1612,6 +1612,28 @@ div.member {
      .upcoming-message h1, .upcoming-event-2 h1, .upcoming-event-2 p{
          color: white;
      }
+
+     /* TEAM */
+     .member-grid {
+        margin: auto;
+        margin-top: 5rem;
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .meet-header h1{
+        font-size: 20px;
+    }
+
+    .meet-header p{
+        font-size: 13px;
+    }
+
+    .team-member{
+        align-items: center;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 400px){
