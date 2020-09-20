@@ -1265,6 +1265,60 @@ div.mobile-only {
     color: #000000;
 }
 
+.meet-the-team {
+    font-family: 'Google Sans', sans-serif;
+    padding: 5rem 0;
+    text-align: center;
+    color: black;
+}
+
+.meet-header {
+    width: 80%;
+    margin: auto;
+}
+
+.meet-header h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.meet-header p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.member-grid {
+    margin: auto;
+    margin-top: 5rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+div.member {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.member h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.member p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.member img {
+    height: 128px;
+    width: 128px;
+}
+
 @media screen and (max-width: 1000px){
 
     /* PRODUCTS */
@@ -1336,7 +1390,21 @@ div.mobile-only {
     .bantay-bayan-links{
         align-self: flex-end;
     }
+
+    
 }
+
+@media screen and (max-width: 840px) {
+    .member-grid {
+        margin: auto;
+        margin-top: 5rem;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 
 @media screen and (max-width: 800px){
 
@@ -1427,6 +1495,10 @@ div.mobile-only {
 
     .upcoming-event p{
         width: 80%
+    }
+
+    .meet-header h1 {
+        font-size: 50px;
     }
 }
 
