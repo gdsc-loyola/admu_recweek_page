@@ -1679,8 +1679,7 @@ div.mobile-only {
 .committee{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 600px;
+    /* justify-content: space-between; */
     background-color: #F8F8F8;
 }
 
@@ -1688,6 +1687,7 @@ div.mobile-only {
     width: 100%;
     padding: 50px 100px 10px;
     box-sizing: border-box;
+    margin-bottom: 48px;
 }
 
 .committee-header h1{
@@ -1725,6 +1725,7 @@ div.mobile-only {
     font-size: 15px;
     line-height: 20px;
     color: #333333;
+    margin-bottom: 24px;
 }
 
 .responsibilities p:nth-child(odd){
@@ -1747,6 +1748,7 @@ div.mobile-only {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    margin-bottom: 16px;
 }
 
 .member-pic{
@@ -1939,6 +1941,7 @@ div.mobile-only {
     /* COMMITTEES */
 
     .committee-header{
+        margin-bottom: 48px;
         padding: 70px 100px 10px;
     }
 
