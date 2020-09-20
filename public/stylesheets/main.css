@@ -831,6 +831,25 @@ div.mobile-only {
     position: absolute;
 }
 
+.product-1{
+    color: green;
+}
+
+.product-2{
+    color:orange;
+}
+
+.product-3{
+    color: #3380B5;
+}
+
+.product-4{
+    color: orangered;
+}
+
+.product-5{
+    color: darkcyan;
+}
 
 
 .product-taglines{
@@ -889,11 +908,12 @@ div.mobile-only {
 }
 
 .gadgets-2-header p{
+    width: 70%;
     font-family: 'Google Sans', sans-serif;
     font-size: 17px;
     line-height: 31px;
     color: #333333;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -1444,6 +1464,10 @@ div.mobile-only {
         width: 50%;
     }
 
+    .pic-1{
+        width: 100%;
+    }
+
     /* SECTION-2 GADGETS */
 
     .gadgets-2-header{
@@ -1573,6 +1597,10 @@ div.mobile-only {
     .qwiklabs-pic,
     .bantay-bayan-pic{
         margin: 10px 0;
+    }
+
+    .sub-1{
+        position: relative;
     }
 }
 
@@ -1804,20 +1832,24 @@ div.mobile-only {
     font-weight: bold;
 }
 
-.join-btn{
+.apply-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.apply-btn p{
     font-family: 'Google Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    background-color: #4285F4;
-    padding: 12px 22px;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
+    font-size: 16.4706px;
+    line-height: 21px;
+    text-align: center;
+    color: #4285F4;
+    margin: 0 0 5px;
 }
+
 
 /* INSTRUCTION */
 
@@ -2095,6 +2127,7 @@ div.mobile-only {
 
     .instruction{
         padding: 0 30px;
+        margin-top: 70px;
     }
 
     .instruction-header{
