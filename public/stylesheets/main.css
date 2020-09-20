@@ -2147,6 +2147,7 @@ footer a:last-child:hover{
 
 footer button:hover{
     background-color: #327EDF;
+    cursor: pointer;
 }
 
 footer a:last-child{
