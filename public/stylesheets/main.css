@@ -2286,8 +2286,8 @@ footer .footer-content-right button{
     }
 
     .lead{
-        align-self: flex-end;
-        align-items: flex-end;
+        align-self: flex-start;
+        align-items: flex-start;
     }
 
     .lead p{
